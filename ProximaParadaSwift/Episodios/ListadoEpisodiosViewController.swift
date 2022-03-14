@@ -22,7 +22,7 @@ class ListadoEpisodiosViewController: UIViewController, ListadoEpisodiosViewCont
 
 extension ListadoEpisodiosViewController: UITableViewDataSource {
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    <#code#>
+    presenter?.numItems ?? 0
 }
 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
