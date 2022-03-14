@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class EpisodiosDetalleControllerBuilder {
-    func build(viewModel: EpisodioDetalleViewModel) -> UIViewController {
+    func build(viewModel: EpisodioViewModel) -> UIViewController {
         let viewController = EpisodioDetalleViewController.create()
         viewController.viewModel = viewModel
         

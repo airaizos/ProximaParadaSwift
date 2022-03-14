@@ -6,4 +6,17 @@
 //
 
 import Foundation
+import Metal
+
+struct Episodio: Codable {
+    let id: Int
+    let title: Rendered
+    let content: Rendered
+    
+    
+    struct Rendered: Codable {
+        let rendered: String
+    }
+}
+
 

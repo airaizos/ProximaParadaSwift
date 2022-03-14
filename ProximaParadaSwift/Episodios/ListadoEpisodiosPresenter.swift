@@ -8,10 +8,16 @@
 import Foundation
 
 class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
+
+    
+    var numItems: Int {
+        postsTitle.count ?? 0
+    }
     
     weak var view: ListadoEpisodiosViewContract?
     
     var interactor: ListadoEpisodiosInteractorContract?
+    var wireframe: ListadoEpisodiosWireframeContract?
     
     private var postsTitle = [PostTitle]() {
         didSet {
@@ -19,9 +25,7 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
         }
     }
     
-    var numItems: Int {
-        postsTitle.count
-    }
+  
     
     func viewDidLoad() {
         interactor?.output = self
@@ -31,6 +35,8 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
     
     func cellViewModel(at indexPath: IndexPath) -> ListadoEpisodiosCellViewModel {
         let item = postsTitle[indexPath.row]
+        
+        wireframe?.navigate(to: item)
         
     }
     

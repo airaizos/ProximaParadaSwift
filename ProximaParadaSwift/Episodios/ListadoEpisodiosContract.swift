@@ -17,8 +17,9 @@ protocol ListadoEpisodiosPresenterContract: AnyObject {
     
     var view: ListadoEpisodiosViewContract? { get set }
     var interactor: ListadoEpisodiosInteractorContract? { get set }
-    var numItems: Int { get set }
+    var numItems: Int { get }
     
+    func cellViewModel(at indexPath: IndexPath) -> ListadoEpisodiosCellViewModel
 }
 
 

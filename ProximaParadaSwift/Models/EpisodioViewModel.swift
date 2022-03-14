@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EpisodioDetalleViewModel {
+struct EpisodioViewModel {
     let title: String
-    
+    let guid: String
 }

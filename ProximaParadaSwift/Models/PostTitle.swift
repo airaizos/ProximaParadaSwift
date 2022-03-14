@@ -11,9 +11,17 @@ import Metal
 struct PostTitle: Identifiable, Codable {
     let id: Int
     let title: Rendered
+    let guid: Rendered
     
     struct Rendered: Codable {
         let rendered: String
     }
 }
 
+extension PostTitle {
+ 
+    var toEpisodioCellViewModel: EpisodioViewModel {
+        
+        EpisodioViewModel(title: title.rendered, guid: guid.rendered)
+    }
+}
