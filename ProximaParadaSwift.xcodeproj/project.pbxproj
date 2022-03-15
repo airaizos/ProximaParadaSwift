@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3A5BB7BD27E0FD6D00B101CB /* InitialControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BB7BC27E0FD6D00B101CB /* InitialControllerBuilder.swift */; };
 		3A5BB7BF27E11C8F00B101CB /* ListadoProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BB7BE27E11C8F00B101CB /* ListadoProviderError.swift */; };
+		3A5BB7C127E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BB7C027E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift */; };
+		3A5BB7C327E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BB7C227E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift */; };
+		3A5BB7C627E1462F00B101CB /* EpisodiosJSON.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BB7C527E1462F00B101CB /* EpisodiosJSON.strings */; };
 		3AF681BA27D7A31E00D482B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681B927D7A31E00D482B7 /* AppDelegate.swift */; };
 		3AF681BC27D7A31E00D482B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681BB27D7A31E00D482B7 /* SceneDelegate.swift */; };
 		3AF681BE27D7A31E00D482B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681BD27D7A31E00D482B7 /* ViewController.swift */; };
@@ -22,7 +25,7 @@
 		3AF681DC27D7A3B300D482B7 /* ListadoEpisodiosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681DB27D7A3B300D482B7 /* ListadoEpisodiosInteractor.swift */; };
 		3AF681DE27D7A3CC00D482B7 /* ListadoEpisodiosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681DD27D7A3CC00D482B7 /* ListadoEpisodiosPresenter.swift */; };
 		3AF681E027D7A40B00D482B7 /* ListadoEpisodiosContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681DF27D7A40B00D482B7 /* ListadoEpisodiosContract.swift */; };
-		3AF681E227D7A99400D482B7 /* ListadoEpisodiosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681E127D7A99400D482B7 /* ListadoEpisodiosProvider.swift */; };
+		3AF681E227D7A99400D482B7 /* ListadoEpisodiosURLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681E127D7A99400D482B7 /* ListadoEpisodiosURLSessionProvider.swift */; };
 		3AF681E527D7AB9C00D482B7 /* PostTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681E427D7AB9C00D482B7 /* PostTitle.swift */; };
 		3AFC2FE027DFABB300FE1582 /* ListadoEpisodiosCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC2FDF27DFABB300FE1582 /* ListadoEpisodiosCellViewModel.swift */; };
 		3AFC2FE227DFAC6800FE1582 /* ListadoEpisodiosWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC2FE127DFAC6800FE1582 /* ListadoEpisodiosWireframe.swift */; };
@@ -37,6 +40,9 @@
 /* Begin PBXFileReference section */
 		3A5BB7BC27E0FD6D00B101CB /* InitialControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialControllerBuilder.swift; sourceTree = "<group>"; };
 		3A5BB7BE27E11C8F00B101CB /* ListadoProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoProviderError.swift; sourceTree = "<group>"; };
+		3A5BB7C027E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosLocalProvider.swift; sourceTree = "<group>"; };
+		3A5BB7C227E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosAlamoFireProvider.swift; sourceTree = "<group>"; };
+		3A5BB7C527E1462F00B101CB /* EpisodiosJSON.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = EpisodiosJSON.strings; sourceTree = "<group>"; };
 		3AF681B627D7A31E00D482B7 /* ProximaParadaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximaParadaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF681B927D7A31E00D482B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF681BB27D7A31E00D482B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +58,7 @@
 		3AF681DB27D7A3B300D482B7 /* ListadoEpisodiosInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosInteractor.swift; sourceTree = "<group>"; };
 		3AF681DD27D7A3CC00D482B7 /* ListadoEpisodiosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosPresenter.swift; sourceTree = "<group>"; };
 		3AF681DF27D7A40B00D482B7 /* ListadoEpisodiosContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosContract.swift; sourceTree = "<group>"; };
-		3AF681E127D7A99400D482B7 /* ListadoEpisodiosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosProvider.swift; sourceTree = "<group>"; };
+		3AF681E127D7A99400D482B7 /* ListadoEpisodiosURLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosURLSessionProvider.swift; sourceTree = "<group>"; };
 		3AF681E427D7AB9C00D482B7 /* PostTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTitle.swift; sourceTree = "<group>"; };
 		3AFC2FDF27DFABB300FE1582 /* ListadoEpisodiosCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosCellViewModel.swift; sourceTree = "<group>"; };
 		3AFC2FE127DFAC6800FE1582 /* ListadoEpisodiosWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosWireframe.swift; sourceTree = "<group>"; };
@@ -75,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A5BB7C427E145E300B101CB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3AF681C527D7A32100D482B7 /* Assets.xcassets */,
+				3A5BB7C527E1462F00B101CB /* EpisodiosJSON.strings */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		3AF681AD27D7A31E00D482B7 = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +117,7 @@
 				3AF681BB27D7A31E00D482B7 /* SceneDelegate.swift */,
 				3AF681BD27D7A31E00D482B7 /* ViewController.swift */,
 				3AF681BF27D7A31E00D482B7 /* Main.storyboard */,
-				3AF681C527D7A32100D482B7 /* Assets.xcassets */,
+				3A5BB7C427E145E300B101CB /* Assets */,
 				3AF681C727D7A32100D482B7 /* LaunchScreen.storyboard */,
 				3AF681CA27D7A32100D482B7 /* Info.plist */,
 				3AF681C227D7A31E00D482B7 /* ProximaParadaSwift.xcdatamodeld */,
@@ -129,8 +144,10 @@
 		3AF681D827D7A39B00D482B7 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				3AF681E127D7A99400D482B7 /* ListadoEpisodiosProvider.swift */,
 				3A5BB7BE27E11C8F00B101CB /* ListadoProviderError.swift */,
+				3AF681E127D7A99400D482B7 /* ListadoEpisodiosURLSessionProvider.swift */,
+				3A5BB7C027E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift */,
+				3A5BB7C227E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -216,6 +233,7 @@
 			files = (
 				3AF681C927D7A32100D482B7 /* LaunchScreen.storyboard in Resources */,
 				3AF681D327D7A36400D482B7 /* ListadoEpisodiosViewController.storyboard in Resources */,
+				3A5BB7C627E1462F00B101CB /* EpisodiosJSON.strings in Resources */,
 				3AFC2FEB27DFAE6300FE1582 /* EpisodioDetalleViewController.storyboard in Resources */,
 				3AF681C627D7A32100D482B7 /* Assets.xcassets in Resources */,
 				3AF681C127D7A31E00D482B7 /* Main.storyboard in Resources */,
@@ -240,13 +258,15 @@
 				3AFC2FE727DFAD8D00FE1582 /* EpisodioViewModel.swift in Sources */,
 				3AF681DC27D7A3B300D482B7 /* ListadoEpisodiosInteractor.swift in Sources */,
 				3AF681D527D7A37700D482B7 /* ListadoEpisodiosViewController.swift in Sources */,
+				3A5BB7C127E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift in Sources */,
 				3AFC2FF127DFB9C300FE1582 /* ListadoEpisodiosViewCell.swift in Sources */,
 				3AFC2FE027DFABB300FE1582 /* ListadoEpisodiosCellViewModel.swift in Sources */,
 				3AFC2FEF27DFB10100FE1582 /* Episodio.swift in Sources */,
 				3AF681C427D7A31E00D482B7 /* ProximaParadaSwift.xcdatamodeld in Sources */,
 				3AF681BA27D7A31E00D482B7 /* AppDelegate.swift in Sources */,
 				3AF681E027D7A40B00D482B7 /* ListadoEpisodiosContract.swift in Sources */,
-				3AF681E227D7A99400D482B7 /* ListadoEpisodiosProvider.swift in Sources */,
+				3A5BB7C327E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift in Sources */,
+				3AF681E227D7A99400D482B7 /* ListadoEpisodiosURLSessionProvider.swift in Sources */,
 				3AF681D727D7A39500D482B7 /* ListadoEpisodiosBuilder.swift in Sources */,
 				3AF681BC27D7A31E00D482B7 /* SceneDelegate.swift in Sources */,
 			);

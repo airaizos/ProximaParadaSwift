@@ -1,5 +1,5 @@
 //
-//  ListadoEpisodiosProvider.swift
+//  ListadoEpisodiosURLSessionProvider.swift
 //  ProximaParadaSwift
 //
 //  Created by Adrian Iraizos Mendoza on 8/3/22.
@@ -7,11 +7,12 @@
 
 import Foundation
 
-class ListadoEpisodiosProvider: ListadoEpisodiosProviderContract {
+class ListadoEpisodiosURLSessionProvider: ListadoEpisodiosProviderContract {
+    
     let urlPost = URL(string: "https://proximaparadaswift.dev/wp-json/wp/v2/posts")!
     var result: Data?
     
-    func network(_ callback: @escaping (Data) -> Void) {
+    func network(_ callback: @escaping (Result<[Data], ListadoProviderError>) -> Void) {
         URLSession.shared.dataTask(with: urlPost) {
             data, response, error in
             guard let data = data, let response = response as? HTTPURLResponse, error == nil else {
@@ -23,8 +24,7 @@ class ListadoEpisodiosProvider: ListadoEpisodiosProviderContract {
             }
             if response.statusCode == 200 {
                 print("Status Code: \(response.statusCode)")
-                callback(data)
-                
+
                 let decoder = JSONDecoder()
                 
                 if let postTitleJSON = try? decoder.decode([PostTitle].self, from: data) {

@@ -11,7 +11,7 @@ import UIKit
 class ListadoEpisodiosBuilder {
     func build() -> UIViewController {
         let viewController = ListadoEpisodiosViewController.createFromStoryBoard()
-        let fetchPosts = ListadoEpisodiosProvider()
+        let fetchPosts = ListadoEpisodiosURLSessionProvider()
         let presenter = ListadoEpisodiosPresenter()
         let interactor = ListadoEpisodiosInteractor()
         let wireframe = ListadoEpisodiosWireframe()
@@ -20,7 +20,7 @@ class ListadoEpisodiosBuilder {
         presenter.interactor = interactor
         presenter.fetchPosts = fetchPosts
         presenter.view = viewController
-        interactor.listadoEpisodiosProvider = ListadoEpisodiosProvider()
+        interactor.listadoEpisodiosProvider = ListadoEpisodiosURLSessionProvider()
         presenter.wireframe = wireframe
         wireframe.view = viewController
         

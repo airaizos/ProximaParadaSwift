@@ -30,7 +30,14 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
     
     func viewDidLoad() {
         interactor?.output = self
-        interactor?.fetchListadoEpisodios()
+    /*    interactor?.fetchListadoEpisodios(with: {
+           
+            switch result {
+            case .success(let postsTitle): self.postsTitle = postsTitle
+            case .failure: break
+             
+            }
+        }*/
     }
     
     
@@ -45,7 +52,11 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
 
 
 extension ListadoEpisodiosPresenter: ListadoEpisodiosInteractorOutputContract {
-    func didFetch(postsTitle: [PostTitle]) {
+    func didFetchFail(with result: ListadoProviderError) {
+        print("Error")
+    }
+    
+    func didFetch(with result: [PostTitle]) {
         self.postsTitle.append(contentsOf: postsTitle)
     }
     
