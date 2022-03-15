@@ -11,13 +11,14 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
 
     
     var numItems: Int {
-        postsTitle.count ?? 0
+        postsTitle.count
     }
     
     weak var view: ListadoEpisodiosViewContract?
     
     var interactor: ListadoEpisodiosInteractorContract?
     var wireframe: ListadoEpisodiosWireframeContract?
+    var fetchPosts: ListadoEpisodiosProviderContract?
     
     private var postsTitle = [PostTitle]() {
         didSet {
@@ -36,7 +37,7 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
     func cellViewModel(at indexPath: IndexPath) -> ListadoEpisodiosCellViewModel {
         let item = postsTitle[indexPath.row]
         
-        wireframe?.navigate(to: item)
+        return item.toEpisodioCellViewModel
         
     }
     

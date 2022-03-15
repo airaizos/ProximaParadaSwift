@@ -20,8 +20,8 @@ struct PostTitle: Identifiable, Codable {
 
 extension PostTitle {
  
-    var toEpisodioCellViewModel: EpisodioViewModel {
+    var toEpisodioCellViewModel: ListadoEpisodiosCellViewModel {
         
-        EpisodioViewModel(title: title.rendered, guid: guid.rendered)
+        ListadoEpisodiosCellViewModel(id: id, title: title.rendered)
     }
 }

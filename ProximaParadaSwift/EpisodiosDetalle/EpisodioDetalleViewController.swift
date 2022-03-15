@@ -9,7 +9,7 @@ import UIKit
 
 class EpisodioDetalleViewController: UIViewController {
 
-        var viewModel: EpisodioViewModel?
+        var viewModel: ListadoEpisodiosCellViewModel?
         
         static func create() -> EpisodioDetalleViewController {
             return UIStoryboard(name: "EpisodioDetalleViewController", bundle: .main).instantiateViewController(withIdentifier: "EpisodioDetalleViewController") as! EpisodioDetalleViewController

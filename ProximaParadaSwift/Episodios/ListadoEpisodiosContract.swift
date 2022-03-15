@@ -20,22 +20,24 @@ protocol ListadoEpisodiosPresenterContract: AnyObject {
     var numItems: Int { get }
     
     func cellViewModel(at indexPath: IndexPath) -> ListadoEpisodiosCellViewModel
+    func viewDidLoad()
 }
 
 
 protocol ListadoEpisodiosInteractorContract: AnyObject {
     var output: ListadoEpisodiosInteractorOutputContract? { get set }
-    func fetchListadoEpisodios()
+    func fetchListadoEpisodios(with result: Result<[PostTitle], Error>)
 }
 
 
 protocol ListadoEpisodiosInteractorOutputContract: AnyObject {
-    func didFetch(postsTitle: [PostTitle])
-
+   // func didFetch(postsTitle: [PostTitle])
+    func didFetch(with result: [PostTitle])
+    func didFetchFail(with result: ListadoProviderError)
 }
 
 protocol ListadoEpisodiosProviderContract: AnyObject {
-    func network(url: URL, callback: @escaping (Data) -> Void)
+    func network(_ callback: @escaping (Result<[Data], ListadoProviderError>) -> Void)
 }
 
 protocol ListadoEpisodiosWireframeContract: AnyObject {

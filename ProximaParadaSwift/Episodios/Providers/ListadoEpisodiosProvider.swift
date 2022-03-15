@@ -8,15 +8,11 @@
 import Foundation
 
 class ListadoEpisodiosProvider: ListadoEpisodiosProviderContract {
-    let url: URL
+    let urlPost = URL(string: "https://proximaparadaswift.dev/wp-json/wp/v2/posts")!
     var result: Data?
     
-    init(url: URL) {
-        self.url = url
-    }
-    
-    func network(url: URL, callback: @escaping (Data) -> Void) {
-        URLSession.shared.dataTask(with: url) {
+    func network(_ callback: @escaping (Data) -> Void) {
+        URLSession.shared.dataTask(with: urlPost) {
             data, response, error in
             guard let data = data, let response = response as? HTTPURLResponse, error == nil else {
                 
@@ -26,7 +22,8 @@ class ListadoEpisodiosProvider: ListadoEpisodiosProviderContract {
                 return
             }
             if response.statusCode == 200 {
-             //   callback(data)
+                print("Status Code: \(response.statusCode)")
+                callback(data)
                 
                 let decoder = JSONDecoder()
                 

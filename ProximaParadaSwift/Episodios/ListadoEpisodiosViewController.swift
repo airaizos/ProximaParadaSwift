@@ -8,24 +8,23 @@
 import UIKit
 
 class ListadoEpisodiosViewController: UIViewController, ListadoEpisodiosViewContract, UITableViewDelegate {
-  
-
-    
     
     var presenter: ListadoEpisodiosPresenterContract?
     
-    
+    @IBOutlet weak var ListadoEpisodios: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        ListadoEpisodios.dataSource = self
+        ListadoEpisodios.delegate = self
+        presenter?.viewDidLoad()
         
     }
     
     func reloadData() {
         DispatchQueue.main.async {
-    //    self.tableView.reloadData()
+            self.ListadoEpisodios.reloadData()
+        }
     }
-}
 }
 
 extension ListadoEpisodiosViewController: UITableViewDataSource {
@@ -39,6 +38,14 @@ extension ListadoEpisodiosViewController: UITableViewDataSource {
             fatalError()
         }
         
+        cell.configure(with: viewModel)
         return cell
+    }
+}
+
+
+extension ListadoEpisodiosViewController {
+    static func createFromStoryBoard() -> ListadoEpisodiosViewController {
+        return UIStoryboard(name: "ListadoEpisodiosViewController", bundle: .main).instantiateViewController(withIdentifier: "ListadoEpisodiosViewController") as! ListadoEpisodiosViewController
     }
 }
