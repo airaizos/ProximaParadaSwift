@@ -30,14 +30,8 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
     
     func viewDidLoad() {
         interactor?.output = self
-    /*    interactor?.fetchListadoEpisodios(with: {
-           
-            switch result {
-            case .success(let postsTitle): self.postsTitle = postsTitle
-            case .failure: break
-             
-            }
-        }*/
+        postsTitle = Bundle.main.decode("Episodios.json")
+        
     }
     
     

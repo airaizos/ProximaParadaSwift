@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+
+class ListadoEpisodiosLocalProvider: ListadoEpisodiosProviderContract {
+    func network(_ callback: @escaping (Result<[Data], ListadoProviderError>) -> Void) {
+        
+        
+    }
+    
+    let result: [PostTitle] = Bundle.main.decode("EpisodiosJSON.json")
+    
+    
+}
