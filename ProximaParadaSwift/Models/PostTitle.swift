@@ -22,6 +22,6 @@ extension PostTitle {
  
     var toEpisodioCellViewModel: ListadoEpisodiosCellViewModel {
         
-        ListadoEpisodiosCellViewModel(id: id, title: title.rendered)
+        ListadoEpisodiosCellViewModel(id: id, title: title.rendered, subtitle: guid.rendered)
     }
 }

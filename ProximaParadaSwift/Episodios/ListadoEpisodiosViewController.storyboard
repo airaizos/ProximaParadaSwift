@@ -42,23 +42,31 @@
                                             <constraint firstAttribute="height" constant="500" id="lYy-4P-Gga"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListadoEpisodiosCell" textLabel="G9G-9E-SN5" style="IBUITableViewCellStyleDefault" id="v5R-gc-f74" customClass="ListadoEpisodiosViewCell" customModule="ProximaParadaSwift" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="414" height="47.5"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListadoEpisodiosCell" textLabel="G9G-9E-SN5" detailTextLabel="6Fi-hQ-sVM" style="IBUITableViewCellStyleSubtitle" id="v5R-gc-f74" customClass="ListadoEpisodiosViewCell" customModule="ProximaParadaSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v5R-gc-f74" id="Ut5-76-nqs">
-                                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="47.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G9G-9E-SN5">
-                                                            <rect key="frame" x="20" y="0.0" width="357.5" height="47.5"/>
+                                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                             <color key="textColor" red="0.25630724430000001" green="0.19515571000000001" blue="0.4246734083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Fi-hQ-sVM">
+                                                            <rect key="frame" x="20" y="22.5" width="44" height="14.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                            <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="cellSubtitle" destination="6Fi-hQ-sVM" id="erl-l6-1tk"/>
                                                     <outlet property="cellTitle" destination="G9G-9E-SN5" id="2S3-dX-oZM"/>
                                                 </connections>
                                             </tableViewCell>

@@ -10,4 +10,5 @@ import Foundation
 struct ListadoEpisodiosCellViewModel {
     let id: Int
     let title: String
+    let subtitle: String
 }
