@@ -30,8 +30,7 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
     
     func viewDidLoad() {
         interactor?.output = self
-    fetchData()
-       // interactor?.output?.didFetch(with: fetchFromURLSession)
+        fetchData()
       //  postsTitle = Bundle.main.decode("Episodios.json")
         
     }
@@ -45,7 +44,10 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
     }
     
     private func fetchData() {
-        interactor?.fetchListadoEpisodios()
+   //     interactor?.fetchListadoEpisodios()
+        fetchPosts?.fetchFromURLSession(completion: { data in
+            self.postsTitle = data
+        })
     }
     
 }
