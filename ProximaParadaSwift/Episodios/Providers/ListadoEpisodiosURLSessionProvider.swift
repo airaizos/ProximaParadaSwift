@@ -9,31 +9,21 @@ import Foundation
 
 class ListadoEpisodiosURLSessionProvider: ListadoEpisodiosProviderContract {
     
-    let urlPost = URL(string: "https://proximaparadaswift.dev/wp-json/wp/v2/posts")!
-    var result: Data?
-    
-    func network(_ callback: @escaping (Result<[Data], ListadoProviderError>) -> Void) {
+    func fetchFromURLSession(completion: @escaping ([PostTitle]) -> ()) {
+        guard let urlPost = URL(string: "https://proximaparadaswift.dev/wp-json/wp/v2/posts?per_page=100") else { return }
+        
         URLSession.shared.dataTask(with: urlPost) {
-            data, response, error in
-            guard let data = data, let response = response as? HTTPURLResponse, error == nil else {
-                
-                if let error = error {
-                    print("Error:  \(error)")
+            data, _, _ in
+            guard let data = data else { return }
+            
+            do {
+                let json = try JSONDecoder().decode([PostTitle].self, from: data)
+                DispatchQueue.main.async {
+                    completion(json)
+                    print("Descarga de datos correcta")
                 }
-                return
-            }
-            if response.statusCode == 200 {
-                print("Status Code: \(response.statusCode)")
-
-                let decoder = JSONDecoder()
-                
-                if let postTitleJSON = try? decoder.decode([PostTitle].self, from: data) {
-                     self.result = data
-                    
-                } 
-                
-            } else {
-                print("Error red \(response.statusCode)")
+            } catch let error as NSError {
+                print("Error al descargar datos \(error.localizedDescription)")
             }
         }.resume()
         

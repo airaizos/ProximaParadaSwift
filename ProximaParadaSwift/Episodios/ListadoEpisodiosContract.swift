@@ -26,7 +26,7 @@ protocol ListadoEpisodiosPresenterContract: AnyObject {
 
 protocol ListadoEpisodiosInteractorContract: AnyObject {
     var output: ListadoEpisodiosInteractorOutputContract? { get set }
-    func fetchListadoEpisodios(with result: Result<[PostTitle], Error>)
+    func fetchListadoEpisodios()
     func loadListadoEpisodios()
 }
 
@@ -39,7 +39,7 @@ protocol ListadoEpisodiosInteractorOutputContract: AnyObject {
 }
 
 protocol ListadoEpisodiosProviderContract: AnyObject {
-    func network(_ callback: @escaping (Result<[Data], ListadoProviderError>) -> Void)
+    func fetchFromURLSession(completion: @escaping ([PostTitle]) -> ())
 }
 
 protocol ListadoEpisodiosWireframeContract: AnyObject {

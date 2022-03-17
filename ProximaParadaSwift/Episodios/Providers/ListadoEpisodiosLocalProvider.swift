@@ -9,7 +9,7 @@ import Foundation
 
 
 class ListadoEpisodiosLocalProvider: ListadoEpisodiosProviderContract {
-    func network(_ callback: @escaping (Result<[Data], ListadoProviderError>) -> Void) {
+    func fetchFromURLSession(completion: @escaping ([PostTitle]) -> ()) {
         
         
     }
