@@ -46,6 +46,10 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
 
 
 extension ListadoEpisodiosPresenter: ListadoEpisodiosInteractorOutputContract {
+    func loadListadoEpisodios() {
+        
+    }
+    
     func didFetchFail(with result: ListadoProviderError) {
         print("Error")
     }

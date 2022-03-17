@@ -20,8 +20,8 @@ class ListadoEpisodiosInteractor: ListadoEpisodiosInteractorContract {
         }
     }
     
-    func loadListadoEpisodios()  {
-  
+    func loadListadoEpisodios() {
+        output?.didFetch(with: Bundle.main.decode("Episodios.json"))
     }
      
 }

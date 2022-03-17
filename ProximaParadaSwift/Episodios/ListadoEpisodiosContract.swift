@@ -35,6 +35,7 @@ protocol ListadoEpisodiosInteractorOutputContract: AnyObject {
    // func didFetch(postsTitle: [PostTitle])
     func didFetch(with result: [PostTitle])
     func didFetchFail(with result: ListadoProviderError)
+    func loadListadoEpisodios()
 }
 
 protocol ListadoEpisodiosProviderContract: AnyObject {
