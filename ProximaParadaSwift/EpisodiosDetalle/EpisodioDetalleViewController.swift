@@ -7,9 +7,17 @@
 
 import UIKit
 
-class EpisodioDetalleViewController: UIViewController {
+class EpisodioDetalleViewController: UIViewController, EpisodioDetalleViewContract {
 
-        var viewModel: ListadoEpisodiosCellViewModel?
+    var presenter: EpisodioDetallePresenterContract?
+    
+        var viewModel: EpisodioDetalleViewModel?
+    
+    
+    
+    @IBOutlet weak var tilte: UILabel!
+    @IBOutlet weak var fecha: UILabel!
+    @IBOutlet weak var contenido: UILabel!
         
         static func create() -> EpisodioDetalleViewController {
             return UIStoryboard(name: "EpisodioDetalleViewController", bundle: .main).instantiateViewController(withIdentifier: "EpisodioDetalleViewController") as! EpisodioDetalleViewController
@@ -18,9 +26,21 @@ class EpisodioDetalleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configure(with: viewModel!) 
      
     }
     
+    func configure(with viewModel: EpisodioDetalleViewModel) {
+        
+        tilte.text = viewModel.title
+      //  fecha.text = viewModel.guid
+        contenido.text = viewModel.content
+    }
+    
+}
 
+extension EpisodioDetalleViewController {
+    static func createFromStoryBoard() -> EpisodioDetalleViewController {
+        return UIStoryboard(name: "EpisodioDetalleViewController", bundle: .main).instantiateViewController(withIdentifier: "EpisodioDetalleViewController") as! EpisodioDetalleViewController
+    }
 }

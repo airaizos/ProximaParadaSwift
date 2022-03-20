@@ -13,8 +13,6 @@ class ListadoEpisodiosViewController: UIViewController, ListadoEpisodiosViewCont
     
     @IBOutlet weak var ListadoEpisodios: UITableView!
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         ListadoEpisodios.dataSource = self

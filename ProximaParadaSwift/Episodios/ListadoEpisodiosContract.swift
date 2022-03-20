@@ -29,6 +29,7 @@ protocol ListadoEpisodiosInteractorContract: AnyObject {
     var output: ListadoEpisodiosInteractorOutputContract? { get set }
     func fetchListadoEpisodios()
     func loadListadoEpisodios()
+    var listadoEpisodiosProvider: ListadoEpisodiosProviderContract? { get set }
 }
 
 

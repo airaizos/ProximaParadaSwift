@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3A04C58A27E244C900B3BEE7 /* BundleDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */; };
 		3A04C58F27E2503400B3BEE7 /* Episodios.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A04C58E27E2503400B3BEE7 /* Episodios.json */; };
+		3A105E2C27E7590700BD8745 /* EpisodioDetalleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A105E2B27E7590700BD8745 /* EpisodioDetalleContract.swift */; };
+		3A105E2E27E7591B00BD8745 /* EpisodioDetalleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A105E2D27E7591B00BD8745 /* EpisodioDetalleBuilder.swift */; };
+		3A105E3027E75BD800BD8745 /* EpisodioDetallePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A105E2F27E75BD800BD8745 /* EpisodioDetallePresenter.swift */; };
+		3A105E3227E75C0F00BD8745 /* EpisodioDetalleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A105E3127E75C0F00BD8745 /* EpisodioDetalleInteractor.swift */; };
 		3A5BB7BD27E0FD6D00B101CB /* InitialControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BB7BC27E0FD6D00B101CB /* InitialControllerBuilder.swift */; };
 		3A5BB7BF27E11C8F00B101CB /* ListadoProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BB7BE27E11C8F00B101CB /* ListadoProviderError.swift */; };
 		3A5BB7C127E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BB7C027E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift */; };
@@ -41,6 +45,10 @@
 /* Begin PBXFileReference section */
 		3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecodable.swift; sourceTree = "<group>"; };
 		3A04C58E27E2503400B3BEE7 /* Episodios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Episodios.json; sourceTree = "<group>"; };
+		3A105E2B27E7590700BD8745 /* EpisodioDetalleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodioDetalleContract.swift; sourceTree = "<group>"; };
+		3A105E2D27E7591B00BD8745 /* EpisodioDetalleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodioDetalleBuilder.swift; sourceTree = "<group>"; };
+		3A105E2F27E75BD800BD8745 /* EpisodioDetallePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodioDetallePresenter.swift; sourceTree = "<group>"; };
+		3A105E3127E75C0F00BD8745 /* EpisodioDetalleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodioDetalleInteractor.swift; sourceTree = "<group>"; };
 		3A5BB7BC27E0FD6D00B101CB /* InitialControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialControllerBuilder.swift; sourceTree = "<group>"; };
 		3A5BB7BE27E11C8F00B101CB /* ListadoProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoProviderError.swift; sourceTree = "<group>"; };
 		3A5BB7C027E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosLocalProvider.swift; sourceTree = "<group>"; };
@@ -177,9 +185,13 @@
 		3AFC2FE327DFAD2600FE1582 /* EpisodiosDetalle */ = {
 			isa = PBXGroup;
 			children = (
+				3A105E2B27E7590700BD8745 /* EpisodioDetalleContract.swift */,
+				3A105E2D27E7591B00BD8745 /* EpisodioDetalleBuilder.swift */,
 				3AFC2FE427DFAD4700FE1582 /* EpisodiosDetalleControllerBuilder.swift */,
 				3AFC2FEA27DFAE6300FE1582 /* EpisodioDetalleViewController.storyboard */,
 				3AFC2FEC27DFAE8D00FE1582 /* EpisodioDetalleViewController.swift */,
+				3A105E2F27E75BD800BD8745 /* EpisodioDetallePresenter.swift */,
+				3A105E3127E75C0F00BD8745 /* EpisodioDetalleInteractor.swift */,
 			);
 			path = EpisodiosDetalle;
 			sourceTree = "<group>";
@@ -263,9 +275,13 @@
 				3AFC2FE527DFAD4700FE1582 /* EpisodiosDetalleControllerBuilder.swift in Sources */,
 				3A5BB7BD27E0FD6D00B101CB /* InitialControllerBuilder.swift in Sources */,
 				3AF681E527D7AB9C00D482B7 /* PostTitle.swift in Sources */,
+				3A105E2C27E7590700BD8745 /* EpisodioDetalleContract.swift in Sources */,
 				3A5BB7BF27E11C8F00B101CB /* ListadoProviderError.swift in Sources */,
 				3AFC2FED27DFAE8D00FE1582 /* EpisodioDetalleViewController.swift in Sources */,
+				3A105E2E27E7591B00BD8745 /* EpisodioDetalleBuilder.swift in Sources */,
+				3A105E3227E75C0F00BD8745 /* EpisodioDetalleInteractor.swift in Sources */,
 				3AF681DE27D7A3CC00D482B7 /* ListadoEpisodiosPresenter.swift in Sources */,
+				3A105E3027E75BD800BD8745 /* EpisodioDetallePresenter.swift in Sources */,
 				3AFC2FE727DFAD8D00FE1582 /* EpisodioViewModel.swift in Sources */,
 				3AF681DC27D7A3B300D482B7 /* ListadoEpisodiosInteractor.swift in Sources */,
 				3AF681D527D7A37700D482B7 /* ListadoEpisodiosViewController.swift in Sources */,
