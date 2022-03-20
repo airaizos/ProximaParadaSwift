@@ -50,6 +50,11 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
         })
     }
     
+    func didSelectItem(at indexPath: IndexPath) {
+        let item = postsTitle[indexPath.row]
+        wireframe?.navigate(to: item)
+    }
+    
 }
 
 

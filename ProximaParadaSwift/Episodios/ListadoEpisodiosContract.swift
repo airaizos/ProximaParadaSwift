@@ -21,6 +21,7 @@ protocol ListadoEpisodiosPresenterContract: AnyObject {
     
     func cellViewModel(at indexPath: IndexPath) -> ListadoEpisodiosCellViewModel
     func viewDidLoad()
+    func didSelectItem(at indexPath: IndexPath)
 }
 
 

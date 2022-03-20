@@ -52,3 +52,9 @@ extension ListadoEpisodiosViewController {
         return UIStoryboard(name: "ListadoEpisodiosViewController", bundle: .main).instantiateViewController(withIdentifier: "ListadoEpisodiosViewController") as! ListadoEpisodiosViewController
     }
 }
+
+extension ListadoEpisodiosViewController {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.didSelectItem(at: indexPath)
+    }
+}
