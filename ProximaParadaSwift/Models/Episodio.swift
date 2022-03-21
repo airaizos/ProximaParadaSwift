@@ -23,7 +23,7 @@ extension Episodio {
  
     var toEpisodioCellViewModel: EpisodiosCellViewModel {
         
-        EpisodiosCellViewModel(id: id, title: title.rendered, content: content.rendered, guid: guid.rendered)
+      EpisodiosCellViewModel(id: id, title: title.rendered, content: content.rendered, guid: guid.rendered)
     }
     
     var toEpisodioDetalleViewModel: EpisodioDetalleViewModel {
