@@ -9,12 +9,12 @@ import Foundation
 
 
 class ListadoEpisodiosLocalProvider: ListadoEpisodiosProviderContract {
-    func fetchFromURLSession(completion: @escaping ([PostTitle]) -> ()) {
+    func fetchFromURLSession(completion: @escaping ([Episodio]) -> ()) {
         
         
     }
     
-    let result: [PostTitle] = Bundle.main.decode("EpisodiosJSON.json")
+    let result: [Episodio] = Bundle.main.decode("EpisodiosJSON.json")
     
     
 }

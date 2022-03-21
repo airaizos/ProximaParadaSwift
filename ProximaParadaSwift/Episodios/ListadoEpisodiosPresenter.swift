@@ -20,7 +20,7 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
     var wireframe: ListadoEpisodiosWireframeContract?
     var fetchPosts: ListadoEpisodiosProviderContract?
     
-    private var postsTitle = [PostTitle]() {
+    private var postsTitle = [Episodio]() {
         didSet {
             view?.reloadData()
         }
@@ -36,7 +36,7 @@ class ListadoEpisodiosPresenter: ListadoEpisodiosPresenterContract {
     }
     
     
-    func cellViewModel(at indexPath: IndexPath) -> ListadoEpisodiosCellViewModel {
+    func cellViewModel(at indexPath: IndexPath) -> EpisodiosCellViewModel {
         let item = postsTitle[indexPath.row]
         
         return item.toEpisodioCellViewModel
@@ -67,7 +67,7 @@ extension ListadoEpisodiosPresenter: ListadoEpisodiosInteractorOutputContract {
         print("Error")
     }
     
-    func didFetch(with result: [PostTitle]) {
+    func didFetch(with result: [Episodio]) {
         self.postsTitle.append(contentsOf: postsTitle)
     }
     

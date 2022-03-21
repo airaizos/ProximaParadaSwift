@@ -19,7 +19,7 @@ protocol ListadoEpisodiosPresenterContract: AnyObject {
     var interactor: ListadoEpisodiosInteractorContract? { get set }
     var numItems: Int { get }
     
-    func cellViewModel(at indexPath: IndexPath) -> ListadoEpisodiosCellViewModel
+    func cellViewModel(at indexPath: IndexPath) -> EpisodiosCellViewModel
     func viewDidLoad()
     func didSelectItem(at indexPath: IndexPath)
 }
@@ -35,16 +35,16 @@ protocol ListadoEpisodiosInteractorContract: AnyObject {
 
 protocol ListadoEpisodiosInteractorOutputContract: AnyObject {
    // func didFetch(postsTitle: [PostTitle])
-    func didFetch(with result: [PostTitle])
+    func didFetch(with result: [Episodio])
     func didFetchFail(with result: ListadoProviderError)
     func loadListadoEpisodios()
 }
 
 protocol ListadoEpisodiosProviderContract: AnyObject {
-    func fetchFromURLSession(completion: @escaping ([PostTitle]) -> ())
+    func fetchFromURLSession(completion: @escaping ([Episodio]) -> ())
 }
 
 protocol ListadoEpisodiosWireframeContract: AnyObject {
     var view: UIViewController? { get set }
-    func navigate(to post: PostTitle)
+    func navigate(to post: Episodio)
 }

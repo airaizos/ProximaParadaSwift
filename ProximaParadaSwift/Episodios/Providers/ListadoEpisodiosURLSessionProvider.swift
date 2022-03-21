@@ -9,7 +9,7 @@ import Foundation
 
 class ListadoEpisodiosURLSessionProvider: ListadoEpisodiosProviderContract {
     
-    func fetchFromURLSession(completion: @escaping ([PostTitle]) -> ()) {
+    func fetchFromURLSession(completion: @escaping ([Episodio]) -> ()) {
         guard let urlPost = URL(string: "https://proximaparadaswift.dev/wp-json/wp/v2/posts?per_page=100") else { return }
         
         URLSession.shared.dataTask(with: urlPost) {
@@ -17,7 +17,7 @@ class ListadoEpisodiosURLSessionProvider: ListadoEpisodiosProviderContract {
             guard let data = data else { return }
             
             do {
-                let json = try JSONDecoder().decode([PostTitle].self, from: data)
+                let json = try JSONDecoder().decode([Episodio].self, from: data)
                 DispatchQueue.main.async {
                     completion(json)
                     print("Descarga de datos correcta")

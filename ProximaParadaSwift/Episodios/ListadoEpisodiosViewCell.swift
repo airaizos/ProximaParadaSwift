@@ -25,10 +25,10 @@ class ListadoEpisodiosViewCell: UITableViewCell {
        
     }
     
-    func configure(with viewModel: ListadoEpisodiosCellViewModel) {
+    func configure(with viewModel: EpisodiosCellViewModel) {
         
         cellTitle.text = viewModel.title
-        cellSubtitle.text = viewModel.subtitle
+        cellSubtitle.text = viewModel.guid
     }
 
 }

@@ -11,9 +11,9 @@ import UIKit
 class ListadoEpisodiosWireframe: ListadoEpisodiosWireframeContract {
     var view: UIViewController?
     
-    func navigate(to post: PostTitle) {
+    func navigate(to post: Episodio) {
         DispatchQueue.main.async {
-            let viewController = EpisodiosDetalleControllerBuilder().build(viewModel: post.toEpisodioCellViewModel)
+            let viewController = EpisodiosDetalleControllerBuilder().build(viewModel: post.toEpisodioDetalleViewModel )
             
             if let navigationController = self.view?.navigationController {
                 navigationController.pushViewController(viewController, animated: true)
