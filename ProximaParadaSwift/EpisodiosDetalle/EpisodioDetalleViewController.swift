@@ -35,7 +35,11 @@ class EpisodioDetalleViewController: UIViewController, EpisodioDetalleViewContra
         tilte.text = viewModel.title
       //  fecha.text = viewModel.guid
   //      contenido.text = viewModel.title
+      
+        
+        
         let data = Data(viewModel.content.utf8)
+       
         
         if let attributedString = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
             contenido.attributedText = attributedString
