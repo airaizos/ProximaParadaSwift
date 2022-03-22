@@ -51,7 +51,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Mc9-QV-pls" firstAttribute="top" secondItem="N3C-0p-0tD" secondAttribute="top" constant="20" id="0Ay-7L-EbC"/>
-                                    <constraint firstAttribute="bottom" secondItem="Mc9-QV-pls" secondAttribute="bottom" id="0zV-RJ-4ja"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mc9-QV-pls" secondAttribute="bottom" constant="60" id="0zV-RJ-4ja"/>
                                     <constraint firstItem="Mc9-QV-pls" firstAttribute="leading" secondItem="N3C-0p-0tD" secondAttribute="leading" constant="10" id="PgF-Ka-oX8"/>
                                     <constraint firstAttribute="trailing" secondItem="Mc9-QV-pls" secondAttribute="trailing" constant="10" id="yJO-c3-lGb"/>
                                 </constraints>
