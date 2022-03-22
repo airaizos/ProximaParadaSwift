@@ -11,5 +11,4 @@ import UIKit
 final class FormularioContactoWireframe:  FormularioContactoWireframeContract {
     var view: UIViewController?
     
-    
 }
