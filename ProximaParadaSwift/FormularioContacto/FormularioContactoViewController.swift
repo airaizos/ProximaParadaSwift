@@ -10,10 +10,22 @@ import UIKit
 class FormularioContactoViewController: UIViewController, FormularioContactoViewContract {
     var presenter: FormularioContactoPresenterContract?
     
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var condicionesTextView: UITextView!
+    
+    @IBOutlet weak var sendButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+        nameTextField.becomeFirstResponder()
     }
     
 
@@ -27,6 +39,9 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
     }
     */
 
+    @IBAction func sendActionButton(_ sender: Any) {
+        
+    }
 }
 
 
