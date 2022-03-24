@@ -11,9 +11,15 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
     var presenter: FormularioContactoPresenterContract?
     
     
+    @IBOutlet weak var sayHelloLabel: UILabel! {
+        didSet {
+            sayHelloLabel.text = sayHelloLabel.titulo(texto: "formulario_contacto_say_hello")
+        }
+    }
+    
     @IBOutlet weak var nameTextField: UITextField! {
         didSet {
-            nameTextField.placeholder = NSLocalizedString("formulario_contacto_name_placeholder", comment: "")
+            nameTextField.placeholder = emailTextField.titulo(texto:"formulario_contacto_name_placeholder")
         }
     }
     
@@ -23,9 +29,24 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
         }
     }
     
-    @IBOutlet weak var condicionesTextView: UITextView!
+    @IBOutlet weak var yourMessage: UILabel! {
+        didSet {
+            yourMessage.text = yourMessage.titulo(texto: "formulario_contacto_your_message")
+        }
+    }
     
-    @IBOutlet weak var sendButton: UIButton!
+    
+    @IBOutlet weak var mensajeTextView: UITextView! {
+        didSet {
+            mensajeTextView.text = NSLocalizedString("formulario_contacto_mensajeTextView", comment: "")
+        }
+    }
+    
+    @IBOutlet weak var sendButton: UIButton! {
+        didSet {
+            sendButton.setTitle(NSLocalizedString("formulario_contacto_send_button", comment: ""), for: .normal)
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -34,6 +55,11 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
         
         
         nameTextField.becomeFirstResponder()
+        mensajeTextView.tintColor = .blue
+        nameTextField.backgroundColor = .systemPink
+        mensajeTextView.layer.cornerRadius = .pi
+        mensajeTextView.backgroundColor = .brown
+        mensajeTextView.textColor = .white
     }
     
 

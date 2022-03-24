@@ -14,7 +14,10 @@
 		3A0141F127E9DCD800059431 /* FormularioContactoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0141F027E9DCD800059431 /* FormularioContactoPresenter.swift */; };
 		3A0141F327E9DCE300059431 /* FormularioContactoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0141F227E9DCE300059431 /* FormularioContactoInteractor.swift */; };
 		3A0141F527E9DCEC00059431 /* FormularioContactoWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0141F427E9DCEC00059431 /* FormularioContactoWireframe.swift */; };
-		3A048BA527EC8B0A009F8782 /* setTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BA427EC8B0A009F8782 /* setTitle.swift */; };
+		3A048BA527EC8B0A009F8782 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BA427EC8B0A009F8782 /* UITextField.swift */; };
+		3A048BAD27EC8F7E009F8782 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A048BAF27EC8F7E009F8782 /* Localizable.strings */; };
+		3A048BB227EC90FC009F8782 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BB127EC90FC009F8782 /* UILabel.swift */; };
+		3A048BB427EC91A7009F8782 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BB327EC91A7009F8782 /* UIButton.swift */; };
 		3A04C58A27E244C900B3BEE7 /* BundleDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */; };
 		3A04C58F27E2503400B3BEE7 /* Episodios.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A04C58E27E2503400B3BEE7 /* Episodios.json */; };
 		3A105E2C27E7590700BD8745 /* EpisodioDetalleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A105E2B27E7590700BD8745 /* EpisodioDetalleContract.swift */; };
@@ -56,7 +59,13 @@
 		3A0141F027E9DCD800059431 /* FormularioContactoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPresenter.swift; sourceTree = "<group>"; };
 		3A0141F227E9DCE300059431 /* FormularioContactoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoInteractor.swift; sourceTree = "<group>"; };
 		3A0141F427E9DCEC00059431 /* FormularioContactoWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoWireframe.swift; sourceTree = "<group>"; };
-		3A048BA427EC8B0A009F8782 /* setTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setTitle.swift; sourceTree = "<group>"; };
+		3A048BA427EC8B0A009F8782 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		3A048BA627EC8EE9009F8782 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		3A048BA727EC8EE9009F8782 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3A048BAE27EC8F7E009F8782 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A048BB027EC8F7F009F8782 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A048BB127EC90FC009F8782 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		3A048BB327EC91A7009F8782 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecodable.swift; sourceTree = "<group>"; };
 		3A04C58E27E2503400B3BEE7 /* Episodios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Episodios.json; sourceTree = "<group>"; };
 		3A105E2B27E7590700BD8745 /* EpisodioDetalleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodioDetalleContract.swift; sourceTree = "<group>"; };
@@ -117,11 +126,21 @@
 			path = FormularioContacto;
 			sourceTree = "<group>";
 		};
+		3A048BA827EC8EFA009F8782 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3A048BAF27EC8F7E009F8782 /* Localizable.strings */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		3A04C58827E244B300B3BEE7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */,
-				3A048BA427EC8B0A009F8782 /* setTitle.swift */,
+				3A048BA427EC8B0A009F8782 /* UITextField.swift */,
+				3A048BB127EC90FC009F8782 /* UILabel.swift */,
+				3A048BB327EC91A7009F8782 /* UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -138,6 +157,7 @@
 		3AF681AD27D7A31E00D482B7 = {
 			isa = PBXGroup;
 			children = (
+				3A048BA827EC8EFA009F8782 /* SupportingFiles */,
 				3AF681B827D7A31E00D482B7 /* ProximaParadaSwift */,
 				3AF681B727D7A31E00D482B7 /* Products */,
 			);
@@ -264,6 +284,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 3AF681AD27D7A31E00D482B7;
 			productRefGroup = 3AF681B727D7A31E00D482B7 /* Products */;
@@ -285,6 +306,7 @@
 				3AF681D327D7A36400D482B7 /* ListadoEpisodiosViewController.storyboard in Resources */,
 				3A04C58F27E2503400B3BEE7 /* Episodios.json in Resources */,
 				3AFC2FEB27DFAE6300FE1582 /* EpisodioDetalleViewController.storyboard in Resources */,
+				3A048BAD27EC8F7E009F8782 /* Localizable.strings in Resources */,
 				3AF681C627D7A32100D482B7 /* Assets.xcassets in Resources */,
 				3AF681C127D7A31E00D482B7 /* Main.storyboard in Resources */,
 			);
@@ -314,14 +336,16 @@
 				3A105E3027E75BD800BD8745 /* EpisodioDetallePresenter.swift in Sources */,
 				3AF681DC27D7A3B300D482B7 /* ListadoEpisodiosInteractor.swift in Sources */,
 				3AF681D527D7A37700D482B7 /* ListadoEpisodiosViewController.swift in Sources */,
+				3A048BB427EC91A7009F8782 /* UIButton.swift in Sources */,
 				3A0141E927E9DC8400059431 /* FormularioContactoContract.swift in Sources */,
 				3A5BB7C127E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift in Sources */,
 				3A04C58A27E244C900B3BEE7 /* BundleDecodable.swift in Sources */,
 				3AFC2FF127DFB9C300FE1582 /* ListadoEpisodiosViewCell.swift in Sources */,
 				3A105E3427E780B500BD8745 /* EpisodioDetalleWireframe.swift in Sources */,
 				3AF681C427D7A31E00D482B7 /* ProximaParadaSwift.xcdatamodeld in Sources */,
-				3A048BA527EC8B0A009F8782 /* setTitle.swift in Sources */,
+				3A048BA527EC8B0A009F8782 /* UITextField.swift in Sources */,
 				3AF681BA27D7A31E00D482B7 /* AppDelegate.swift in Sources */,
+				3A048BB227EC90FC009F8782 /* UILabel.swift in Sources */,
 				3AF681E027D7A40B00D482B7 /* ListadoEpisodiosContract.swift in Sources */,
 				3A0141EF27E9DCB700059431 /* FormularioContactoViewController.swift in Sources */,
 				3A5BB7C327E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift in Sources */,
@@ -335,10 +359,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3A048BAF27EC8F7E009F8782 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A048BAE27EC8F7E009F8782 /* es */,
+				3A048BB027EC8F7F009F8782 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		3AF681BF27D7A31E00D482B7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3AF681C027D7A31E00D482B7 /* Base */,
+				3A048BA627EC8EE9009F8782 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -347,6 +381,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3AF681C827D7A32100D482B7 /* Base */,
+				3A048BA727EC8EE9009F8782 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -358,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -419,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

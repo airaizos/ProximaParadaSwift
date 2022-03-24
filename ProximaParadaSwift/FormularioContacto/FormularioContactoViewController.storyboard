@@ -69,7 +69,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" text="Hola " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q6q-CH-AiF">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" text="Hello" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q6q-CH-AiF">
                                         <rect key="frame" x="10" y="115" width="394" height="116"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -109,7 +109,11 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="6nf-X0-dQd" id="QP7-zL-t7H"/>
+                        <outlet property="mensajeTextView" destination="Q6q-CH-AiF" id="tYu-Sn-7eP"/>
                         <outlet property="nameTextField" destination="bC6-xP-5Ei" id="NxR-LJ-eHX"/>
+                        <outlet property="sayHelloLabel" destination="lpf-1m-f41" id="Vaj-kF-c7C"/>
+                        <outlet property="sendButton" destination="RWQ-xw-5Nt" id="Xht-CZ-1JR"/>
+                        <outlet property="yourMessage" destination="aXT-Vh-GFM" id="P3P-dH-a9C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
