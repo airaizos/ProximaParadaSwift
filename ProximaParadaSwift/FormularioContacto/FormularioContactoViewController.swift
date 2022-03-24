@@ -11,9 +11,17 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
     var presenter: FormularioContactoPresenterContract?
     
     
-    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField! {
+        didSet {
+            nameTextField.placeholder = NSLocalizedString("formulario_contacto_name_placeholder", comment: "")
+        }
+    }
     
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField! {
+        didSet {
+            emailTextField.placeholder = emailTextField.titulo(texto: "formulario_contacto_email_placeholder")
+        }
+    }
     
     @IBOutlet weak var condicionesTextView: UITextView!
     

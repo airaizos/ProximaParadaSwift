@@ -14,6 +14,7 @@
 		3A0141F127E9DCD800059431 /* FormularioContactoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0141F027E9DCD800059431 /* FormularioContactoPresenter.swift */; };
 		3A0141F327E9DCE300059431 /* FormularioContactoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0141F227E9DCE300059431 /* FormularioContactoInteractor.swift */; };
 		3A0141F527E9DCEC00059431 /* FormularioContactoWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0141F427E9DCEC00059431 /* FormularioContactoWireframe.swift */; };
+		3A048BA527EC8B0A009F8782 /* setTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BA427EC8B0A009F8782 /* setTitle.swift */; };
 		3A04C58A27E244C900B3BEE7 /* BundleDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */; };
 		3A04C58F27E2503400B3BEE7 /* Episodios.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A04C58E27E2503400B3BEE7 /* Episodios.json */; };
 		3A105E2C27E7590700BD8745 /* EpisodioDetalleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A105E2B27E7590700BD8745 /* EpisodioDetalleContract.swift */; };
@@ -55,6 +56,7 @@
 		3A0141F027E9DCD800059431 /* FormularioContactoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPresenter.swift; sourceTree = "<group>"; };
 		3A0141F227E9DCE300059431 /* FormularioContactoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoInteractor.swift; sourceTree = "<group>"; };
 		3A0141F427E9DCEC00059431 /* FormularioContactoWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoWireframe.swift; sourceTree = "<group>"; };
+		3A048BA427EC8B0A009F8782 /* setTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setTitle.swift; sourceTree = "<group>"; };
 		3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecodable.swift; sourceTree = "<group>"; };
 		3A04C58E27E2503400B3BEE7 /* Episodios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Episodios.json; sourceTree = "<group>"; };
 		3A105E2B27E7590700BD8745 /* EpisodioDetalleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodioDetalleContract.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */,
+				3A048BA427EC8B0A009F8782 /* setTitle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				3AFC2FF127DFB9C300FE1582 /* ListadoEpisodiosViewCell.swift in Sources */,
 				3A105E3427E780B500BD8745 /* EpisodioDetalleWireframe.swift in Sources */,
 				3AF681C427D7A31E00D482B7 /* ProximaParadaSwift.xcdatamodeld in Sources */,
+				3A048BA527EC8B0A009F8782 /* setTitle.swift in Sources */,
 				3AF681BA27D7A31E00D482B7 /* AppDelegate.swift in Sources */,
 				3AF681E027D7A40B00D482B7 /* ListadoEpisodiosContract.swift in Sources */,
 				3A0141EF27E9DCB700059431 /* FormularioContactoViewController.swift in Sources */,
