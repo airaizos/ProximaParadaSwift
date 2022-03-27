@@ -8,5 +8,9 @@
 import Foundation
 
 final class FormularioContactoInteractor: FormularioContactoInteractorContract {
+    var formularioContactoProvider: FormularioContactoProvider?
     
+    func saveFormularioContacto(formularioContactoModel: FormularioContactoModel) {
+        formularioContactoProvider?.saveFormularioContacto(formularioContactoModel)
+    }
 }

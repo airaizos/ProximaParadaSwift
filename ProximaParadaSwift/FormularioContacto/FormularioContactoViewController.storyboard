@@ -55,11 +55,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="TextFieldDidChangeWithTextField:" destination="Y6W-OH-hqX" eventType="editingChanged" id="aMR-NU-Lhz"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Here your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nf-X0-dQd" userLabel="YourEmail">
                                                 <rect key="frame" x="0.0" y="44" width="394" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="TextFieldDidChangeWithTextField:" destination="Y6W-OH-hqX" eventType="editingChanged" id="7sp-MP-XvK"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yourMessageLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXT-Vh-GFM" userLabel="yourMessageLabel">
                                                 <rect key="frame" x="0.0" y="88" width="394" height="17"/>
@@ -113,6 +119,7 @@
                         <outlet property="nameTextField" destination="bC6-xP-5Ei" id="NxR-LJ-eHX"/>
                         <outlet property="sayHelloLabel" destination="lpf-1m-f41" id="Vaj-kF-c7C"/>
                         <outlet property="sendButton" destination="RWQ-xw-5Nt" id="Xht-CZ-1JR"/>
+                        <outlet property="titleView" destination="DPg-tt-C3O" id="v9K-zL-lxZ"/>
                         <outlet property="yourMessage" destination="aXT-Vh-GFM" id="P3P-dH-a9C"/>
                     </connections>
                 </viewController>
