@@ -23,7 +23,7 @@ class FormularioContactoProvider: FormularioContactoProviderContract {
             .appendingPathExtension("\(fileName).plist")
         return url
     }
-    //TODO: No guarda el fileManager. hayq ue inicalizer en el builder?
+
     func saveFormularioContacto(_ form: FormularioContactoModel) {
         guard let url = fileURL else {
             return
@@ -34,6 +34,7 @@ class FormularioContactoProvider: FormularioContactoProviderContract {
         do {
             let data = try encoder.encode(form)
             try data.write(to: url)
+            try print(String(contentsOf: fileURL!).utf8)
         } catch {
             print("❌ Error al guardar: \(error.localizedDescription)")
         }

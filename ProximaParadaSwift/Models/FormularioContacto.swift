@@ -15,6 +15,10 @@ struct FormularioContactoModel: Codable {
 
 struct FormularioContactoViewModel {
     let sendedData: String
+    
+    var toFormularioContactoViewModel:FormularioContactoViewModel {
+        return FormularioContactoViewModel(sendedData: sendedData)
+    }
 }
 
 extension FormularioContactoModel {
@@ -34,7 +38,5 @@ extension FormularioContactoModel {
     var isValidFormularioContacto: Bool {
         isValidName && isValidEmail
     }
-    var toFormularioContactoViewModel:FormularioContactoViewModel {
-        return FormularioContactoViewModel(sendedData: "\(message ?? "No message") \n \(name ?? "")\n\(email ?? "")")
-    }
+
 }

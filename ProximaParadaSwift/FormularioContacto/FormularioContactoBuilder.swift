@@ -15,9 +15,11 @@ final class FormularioContactoBuilder {
         let presenter = FormularioContactoPresenter()
         let interactor = FormularioContactoInteractor()
         let wireframe = FormularioContactoWireframe()
+        let formularioProvider = FormularioContactoProvider()
         
         viewController.presenter = presenter
         presenter.interactor = interactor
+        interactor.formularioContactoProvider = formularioProvider
         presenter.view = viewController
         presenter.wireframe = wireframe
         wireframe.view = viewController
