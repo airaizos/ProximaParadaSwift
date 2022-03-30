@@ -12,9 +12,9 @@ final class FormularioContactoWireframe:  FormularioContactoWireframeContract {
     var view: UIViewController?
     
     
-    func navigate(to preview: FormularioContactoViewModel) {
+    func navigate(to viewModel: FormularioContactoViewModel) {
         DispatchQueue.main.async {
-            let viewController = FormularioContactoPreviewControllerBuilder().build(viewModel: preview.toFormularioContactoViewModel)
+            let viewController = FormularioContactoPreviewControllerBuilder().build(viewModel: viewModel.toFormularioContactoViewModel)
             
             if let navigationController = self.view?.navigationController {
                 navigationController.pushViewController(viewController, animated: true)

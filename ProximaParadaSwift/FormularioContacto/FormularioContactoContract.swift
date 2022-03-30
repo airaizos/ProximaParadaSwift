@@ -30,6 +30,8 @@ protocol FormularioContactoPresenterContract: AnyObject {
     func didUpdateName(_ name: String?)
     func didUpdateEmail(_ email: String?)
     func didUpdateMessage(_ message: String?)
+    
+    func showPreview()
 }
 
 protocol FormularioContactoInteractorContract: AnyObject {
@@ -39,6 +41,7 @@ protocol FormularioContactoInteractorContract: AnyObject {
 protocol FormularioContactoWireframeContract: AnyObject {
     
     var view: UIViewController? { get set }
+    func navigate(to viewModel: FormularioContactoViewModel)
 }
 
 

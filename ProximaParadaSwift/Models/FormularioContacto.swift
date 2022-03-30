@@ -39,4 +39,7 @@ extension FormularioContactoModel {
         isValidName && isValidEmail
     }
 
+    var toFormularioContactoPreviewViewModel: FormularioContactoViewModel {
+        FormularioContactoViewModel(sendedData: "\(name!)\n\(email!)\n message: \(message ?? "Empty")")
+    }
 }

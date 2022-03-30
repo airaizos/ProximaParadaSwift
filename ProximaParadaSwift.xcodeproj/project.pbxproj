@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0059C327F49A7900A57E78 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0059C227F49A7900A57E78 /* UIColor.swift */; };
 		3A0141E927E9DC8400059431 /* FormularioContactoContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0141E827E9DC8400059431 /* FormularioContactoContract.swift */; };
 		3A0141EB27E9DC8E00059431 /* FormularioContactoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0141EA27E9DC8E00059431 /* FormularioContactoBuilder.swift */; };
 		3A0141ED27E9DCA300059431 /* FormularioContactoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0141EC27E9DCA300059431 /* FormularioContactoViewController.storyboard */; };
@@ -20,7 +21,7 @@
 		3A048BB427EC91A7009F8782 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BB327EC91A7009F8782 /* UIButton.swift */; };
 		3A04C58A27E244C900B3BEE7 /* BundleDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */; };
 		3A04C58F27E2503400B3BEE7 /* Episodios.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A04C58E27E2503400B3BEE7 /* Episodios.json */; };
-		3A06B76E27F1F8400015CA32 /* FormularioContactoPreview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A06B76D27F1F8400015CA32 /* FormularioContactoPreview.storyboard */; };
+		3A06B76E27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A06B76D27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard */; };
 		3A06B77027F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06B76F27F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift */; };
 		3A06B77227F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06B77127F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift */; };
 		3A06B77427F1FC030015CA32 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06B77327F1FC030015CA32 /* UIViewController.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A0059C227F49A7900A57E78 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		3A0141E827E9DC8400059431 /* FormularioContactoContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoContract.swift; sourceTree = "<group>"; };
 		3A0141EA27E9DC8E00059431 /* FormularioContactoBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoBuilder.swift; sourceTree = "<group>"; };
 		3A0141EC27E9DCA300059431 /* FormularioContactoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormularioContactoViewController.storyboard; sourceTree = "<group>"; };
@@ -74,7 +76,7 @@
 		3A048BB327EC91A7009F8782 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecodable.swift; sourceTree = "<group>"; };
 		3A04C58E27E2503400B3BEE7 /* Episodios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Episodios.json; sourceTree = "<group>"; };
-		3A06B76D27F1F8400015CA32 /* FormularioContactoPreview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormularioContactoPreview.storyboard; sourceTree = "<group>"; };
+		3A06B76D27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormularioContactoPreviewViewController.storyboard; sourceTree = "<group>"; };
 		3A06B76F27F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewViewController.swift; sourceTree = "<group>"; };
 		3A06B77127F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewControllerBuilder.swift; sourceTree = "<group>"; };
 		3A06B77327F1FC030015CA32 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				3A048BB127EC90FC009F8782 /* UILabel.swift */,
 				3A048BB327EC91A7009F8782 /* UIButton.swift */,
 				3A06B77327F1FC030015CA32 /* UIViewController.swift */,
+				3A0059C227F49A7900A57E78 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,7 +165,7 @@
 		3A06B76C27F1F8230015CA32 /* FormularioContactoPreview */ = {
 			isa = PBXGroup;
 			children = (
-				3A06B76D27F1F8400015CA32 /* FormularioContactoPreview.storyboard */,
+				3A06B76D27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard */,
 				3A06B76F27F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift */,
 				3A06B77127F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift */,
 			);
@@ -332,7 +335,7 @@
 				3AF681D327D7A36400D482B7 /* ListadoEpisodiosViewController.storyboard in Resources */,
 				3A04C58F27E2503400B3BEE7 /* Episodios.json in Resources */,
 				3AFC2FEB27DFAE6300FE1582 /* EpisodioDetalleViewController.storyboard in Resources */,
-				3A06B76E27F1F8400015CA32 /* FormularioContactoPreview.storyboard in Resources */,
+				3A06B76E27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard in Resources */,
 				3A048BAD27EC8F7E009F8782 /* Localizable.strings in Resources */,
 				3AF681C627D7A32100D482B7 /* Assets.xcassets in Resources */,
 				3AF681C127D7A31E00D482B7 /* Main.storyboard in Resources */,
@@ -375,6 +378,7 @@
 				3AFC2FF127DFB9C300FE1582 /* ListadoEpisodiosViewCell.swift in Sources */,
 				3A105E3427E780B500BD8745 /* EpisodioDetalleWireframe.swift in Sources */,
 				3AF681C427D7A31E00D482B7 /* ProximaParadaSwift.xcdatamodeld in Sources */,
+				3A0059C327F49A7900A57E78 /* UIColor.swift in Sources */,
 				3A048BA527EC8B0A009F8782 /* UITextField.swift in Sources */,
 				3AF681BA27D7A31E00D482B7 /* AppDelegate.swift in Sources */,
 				3A048BB227EC90FC009F8782 /* UILabel.swift in Sources */,

@@ -23,8 +23,12 @@ final class FormularioContactoPresenter: FormularioContactoPresenterContract {
     
     func didPressSend() {
         if formularioContactoModel.isValidFormularioContacto {
-            interactor?.saveFormularioContacto(formularioContactoModel: formularioContactoModel)
+            
+             interactor?.saveFormularioContacto(formularioContactoModel: formularioContactoModel)
+            showPreview()
+           /*
             view?.showValidationFormularioContacto()
+            */
         } else {
             view?.showErrorValidationFormularioContacto()
         }
@@ -37,6 +41,10 @@ final class FormularioContactoPresenter: FormularioContactoPresenterContract {
     }
     func didUpdateMessage(_ message: String?) {
         formularioContactoModel.message = message
+    }
+    
+    func showPreview() {
+        wireframe?.navigate(to: formularioContactoModel.toFormularioContactoPreviewViewModel)
     }
     
 }

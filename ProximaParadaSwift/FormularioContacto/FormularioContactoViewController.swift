@@ -81,10 +81,14 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
         switch textField {
         case nameTextField: presenter?.didUpdateName(textField.text)
         case emailTextField: presenter?.didUpdateEmail(textField.text)
-        case mensajeTextView: presenter?.didUpdateMessage(textField.text)
+      //  case mensajeTextView: presenter?.didUpdateMessage(textField.text)
         default:
             break
         }
+    }
+    
+    internal func textViewDidChange(_ textView: UITextView) {
+        presenter?.didUpdateMessage(textView.text)
     }
     
     
@@ -128,7 +132,7 @@ extension FormularioContactoViewController: UITextViewDelegate {
         switch textField {
         case nameTextField: emailTextField.becomeFirstResponder()
         case emailTextField: yourMessage.becomeFirstResponder()
-        case mensajeTextView: textField.resignFirstResponder()
+ //       case mensajeTextView: textField.resignFirstResponder()
         default: break
         }
         return true
