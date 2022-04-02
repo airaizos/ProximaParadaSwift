@@ -40,6 +40,6 @@ extension FormularioContactoModel {
     }
 
     var toFormularioContactoPreviewViewModel: FormularioContactoViewModel {
-        FormularioContactoViewModel(sendedData: "\(name!)\n\(email!)\n message: \(message ?? "Empty")")
+        FormularioContactoViewModel(sendedData: "\(name!)\n\(email!)\n \(message ?? "Hola adrintro")")
     }
 }

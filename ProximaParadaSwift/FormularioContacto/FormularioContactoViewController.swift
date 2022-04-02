@@ -62,8 +62,11 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
     }
     
     @IBOutlet weak var sendButton: UIButton! {
+        
         didSet {
             sendButton.setTitle(NSLocalizedString("formulario_contacto_send_button", comment: ""), for: .normal)
+            sendButton.configuration?.image = UIImage(systemName: "arrow.forward.circle")!
+            
         }
     }
     
@@ -73,7 +76,11 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
         super.viewDidLoad()
         nameTextField.becomeFirstResponder()
         initialConfiguration()
+        
+        mensajeTextView.delegate = self
     }
+    
+    
     
 //MARK: Funciones
     
@@ -81,16 +88,10 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
         switch textField {
         case nameTextField: presenter?.didUpdateName(textField.text)
         case emailTextField: presenter?.didUpdateEmail(textField.text)
-      //  case mensajeTextView: presenter?.didUpdateMessage(textField.text)
         default:
             break
         }
     }
-    
-    internal func textViewDidChange(_ textView: UITextView) {
-        presenter?.didUpdateMessage(textView.text)
-    }
-    
     
     func showValidationFormularioContacto() {
         DispatchQueue.main.async {
@@ -108,6 +109,7 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
         }
     }
     
+    
 //MARK: IBActions
     @IBAction func TextFieldDidChange(textField: UITextField) {
         textFieldDidChange(textField)
@@ -115,10 +117,14 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
     
     @IBAction func sendActionButton(_ sender: Any) {
         presenter?.didPressSend()
+  //      textViewDidChange(mensajeTextView)
+        
     }
     
+ 
 
 }
+
 
 //MARK: TODO crear una extension de esto:
 extension FormularioContactoViewController {
@@ -132,10 +138,14 @@ extension FormularioContactoViewController: UITextViewDelegate {
         switch textField {
         case nameTextField: emailTextField.becomeFirstResponder()
         case emailTextField: yourMessage.becomeFirstResponder()
- //       case mensajeTextView: textField.resignFirstResponder()
+        case mensajeTextView: textField.resignFirstResponder()
         default: break
         }
         return true
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        presenter?.didUpdateMessage(textView.text)
     }
     
     @objc private func hideKeyboard() {

@@ -25,6 +25,8 @@
 		3A06B77027F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06B76F27F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift */; };
 		3A06B77227F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06B77127F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift */; };
 		3A06B77427F1FC030015CA32 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06B77327F1FC030015CA32 /* UIViewController.swift */; };
+		3A07188C27F5EF3A002A0E37 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07188A27F5EF3A002A0E37 /* ButtonView.swift */; };
+		3A07188D27F5EF3A002A0E37 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A07188B27F5EF3A002A0E37 /* ButtonView.xib */; };
 		3A105E2C27E7590700BD8745 /* EpisodioDetalleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A105E2B27E7590700BD8745 /* EpisodioDetalleContract.swift */; };
 		3A105E2E27E7591B00BD8745 /* EpisodioDetalleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A105E2D27E7591B00BD8745 /* EpisodioDetalleBuilder.swift */; };
 		3A105E3027E75BD800BD8745 /* EpisodioDetallePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A105E2F27E75BD800BD8745 /* EpisodioDetallePresenter.swift */; };
@@ -80,6 +82,8 @@
 		3A06B76F27F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewViewController.swift; sourceTree = "<group>"; };
 		3A06B77127F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewControllerBuilder.swift; sourceTree = "<group>"; };
 		3A06B77327F1FC030015CA32 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		3A07188A27F5EF3A002A0E37 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		3A07188B27F5EF3A002A0E37 /* ButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
 		3A105E2B27E7590700BD8745 /* EpisodioDetalleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodioDetalleContract.swift; sourceTree = "<group>"; };
 		3A105E2D27E7591B00BD8745 /* EpisodioDetalleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodioDetalleBuilder.swift; sourceTree = "<group>"; };
 		3A105E2F27E75BD800BD8745 /* EpisodioDetallePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodioDetallePresenter.swift; sourceTree = "<group>"; };
@@ -172,6 +176,15 @@
 			path = FormularioContactoPreview;
 			sourceTree = "<group>";
 		};
+		3A07188927F5EEF2002A0E37 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				3A07188A27F5EF3A002A0E37 /* ButtonView.swift */,
+				3A07188B27F5EF3A002A0E37 /* ButtonView.xib */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		3A5BB7C427E145E300B101CB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +197,6 @@
 		3AF681AD27D7A31E00D482B7 = {
 			isa = PBXGroup;
 			children = (
-				3A048BA827EC8EFA009F8782 /* SupportingFiles */,
 				3AF681B827D7A31E00D482B7 /* ProximaParadaSwift */,
 				3AF681B727D7A31E00D482B7 /* Products */,
 			);
@@ -201,11 +213,13 @@
 		3AF681B827D7A31E00D482B7 /* ProximaParadaSwift */ = {
 			isa = PBXGroup;
 			children = (
+				3A07188927F5EEF2002A0E37 /* Objects */,
 				3A04C58827E244B300B3BEE7 /* Extensions */,
 				3A0141E727E9DC5700059431 /* FormularioContacto */,
 				3AF681D027D7A33C00D482B7 /* Episodios */,
 				3AF681D827D7A39B00D482B7 /* Providers */,
 				3AFC2FE327DFAD2600FE1582 /* EpisodiosDetalle */,
+				3A048BA827EC8EFA009F8782 /* SupportingFiles */,
 				3AF681E327D7AB4200D482B7 /* Models */,
 				3A5BB7BC27E0FD6D00B101CB /* InitialControllerBuilder.swift */,
 				3AF681B927D7A31E00D482B7 /* AppDelegate.swift */,
@@ -338,6 +352,7 @@
 				3A06B76E27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard in Resources */,
 				3A048BAD27EC8F7E009F8782 /* Localizable.strings in Resources */,
 				3AF681C627D7A32100D482B7 /* Assets.xcassets in Resources */,
+				3A07188D27F5EF3A002A0E37 /* ButtonView.xib in Resources */,
 				3AF681C127D7A31E00D482B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +372,7 @@
 				3A16282327EDD95200AE0210 /* FormularioContacto.swift in Sources */,
 				3A16DA3527F0D9EC00D9EB36 /* FormularioContactoProvider.swift in Sources */,
 				3A0141F527E9DCEC00059431 /* FormularioContactoWireframe.swift in Sources */,
+				3A07188C27F5EF3A002A0E37 /* ButtonView.swift in Sources */,
 				3A5BB7BD27E0FD6D00B101CB /* InitialControllerBuilder.swift in Sources */,
 				3AF681E527D7AB9C00D482B7 /* Episodio.swift in Sources */,
 				3A105E2C27E7590700BD8745 /* EpisodioDetalleContract.swift in Sources */,
