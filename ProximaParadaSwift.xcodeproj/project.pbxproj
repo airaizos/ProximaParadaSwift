@@ -21,6 +21,10 @@
 		3A048BB427EC91A7009F8782 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BB327EC91A7009F8782 /* UIButton.swift */; };
 		3A04C58A27E244C900B3BEE7 /* BundleDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */; };
 		3A04C58F27E2503400B3BEE7 /* Episodios.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A04C58E27E2503400B3BEE7 /* Episodios.json */; };
+		3A05D96C27F8E3C300F6D936 /* FormularioContactoPreviewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D96B27F8E3C300F6D936 /* FormularioContactoPreviewContract.swift */; };
+		3A05D96E27F8E3DA00F6D936 /* FormularioContactoPreviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D96D27F8E3DA00F6D936 /* FormularioContactoPreviewPresenter.swift */; };
+		3A05D97027F8E3EA00F6D936 /* FormularioContactoPreviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D96F27F8E3EA00F6D936 /* FormularioContactoPreviewInteractor.swift */; };
+		3A05D97227F8E4CF00F6D936 /* MensajeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D97127F8E4CF00F6D936 /* MensajeProvider.swift */; };
 		3A06B76E27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A06B76D27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard */; };
 		3A06B77027F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06B76F27F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift */; };
 		3A06B77227F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06B77127F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift */; };
@@ -78,6 +82,10 @@
 		3A048BB327EC91A7009F8782 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		3A04C58927E244C900B3BEE7 /* BundleDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecodable.swift; sourceTree = "<group>"; };
 		3A04C58E27E2503400B3BEE7 /* Episodios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Episodios.json; sourceTree = "<group>"; };
+		3A05D96B27F8E3C300F6D936 /* FormularioContactoPreviewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewContract.swift; sourceTree = "<group>"; };
+		3A05D96D27F8E3DA00F6D936 /* FormularioContactoPreviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewPresenter.swift; sourceTree = "<group>"; };
+		3A05D96F27F8E3EA00F6D936 /* FormularioContactoPreviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewInteractor.swift; sourceTree = "<group>"; };
+		3A05D97127F8E4CF00F6D936 /* MensajeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajeProvider.swift; sourceTree = "<group>"; };
 		3A06B76D27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormularioContactoPreviewViewController.storyboard; sourceTree = "<group>"; };
 		3A06B76F27F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewViewController.swift; sourceTree = "<group>"; };
 		3A06B77127F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewControllerBuilder.swift; sourceTree = "<group>"; };
@@ -169,9 +177,12 @@
 		3A06B76C27F1F8230015CA32 /* FormularioContactoPreview */ = {
 			isa = PBXGroup;
 			children = (
+				3A05D96B27F8E3C300F6D936 /* FormularioContactoPreviewContract.swift */,
+				3A06B77127F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift */,
 				3A06B76D27F1F8400015CA32 /* FormularioContactoPreviewViewController.storyboard */,
 				3A06B76F27F1F84A0015CA32 /* FormularioContactoPreviewViewController.swift */,
-				3A06B77127F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift */,
+				3A05D96D27F8E3DA00F6D936 /* FormularioContactoPreviewPresenter.swift */,
+				3A05D96F27F8E3EA00F6D936 /* FormularioContactoPreviewInteractor.swift */,
 			);
 			path = FormularioContactoPreview;
 			sourceTree = "<group>";
@@ -257,6 +268,7 @@
 				3A5BB7C027E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift */,
 				3A5BB7C227E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift */,
 				3A16DA3427F0D9EC00D9EB36 /* FormularioContactoProvider.swift */,
+				3A05D97127F8E4CF00F6D936 /* MensajeProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -366,6 +378,7 @@
 			files = (
 				3AFC2FE227DFAC6800FE1582 /* ListadoEpisodiosWireframe.swift in Sources */,
 				3AF681BE27D7A31E00D482B7 /* ViewController.swift in Sources */,
+				3A05D96E27F8E3DA00F6D936 /* FormularioContactoPreviewPresenter.swift in Sources */,
 				3A0141EB27E9DC8E00059431 /* FormularioContactoBuilder.swift in Sources */,
 				3A0141F327E9DCE300059431 /* FormularioContactoInteractor.swift in Sources */,
 				3AFC2FE527DFAD4700FE1582 /* EpisodiosDetalleControllerBuilder.swift in Sources */,
@@ -377,6 +390,7 @@
 				3AF681E527D7AB9C00D482B7 /* Episodio.swift in Sources */,
 				3A105E2C27E7590700BD8745 /* EpisodioDetalleContract.swift in Sources */,
 				3A06B77227F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift in Sources */,
+				3A05D96C27F8E3C300F6D936 /* FormularioContactoPreviewContract.swift in Sources */,
 				3A5BB7BF27E11C8F00B101CB /* ListadoProviderError.swift in Sources */,
 				3AFC2FED27DFAE8D00FE1582 /* EpisodioDetalleViewController.swift in Sources */,
 				3A105E2E27E7591B00BD8745 /* EpisodioDetalleBuilder.swift in Sources */,
@@ -394,6 +408,7 @@
 				3AFC2FF127DFB9C300FE1582 /* ListadoEpisodiosViewCell.swift in Sources */,
 				3A105E3427E780B500BD8745 /* EpisodioDetalleWireframe.swift in Sources */,
 				3AF681C427D7A31E00D482B7 /* ProximaParadaSwift.xcdatamodeld in Sources */,
+				3A05D97027F8E3EA00F6D936 /* FormularioContactoPreviewInteractor.swift in Sources */,
 				3A0059C327F49A7900A57E78 /* UIColor.swift in Sources */,
 				3A048BA527EC8B0A009F8782 /* UITextField.swift in Sources */,
 				3AF681BA27D7A31E00D482B7 /* AppDelegate.swift in Sources */,
@@ -401,6 +416,7 @@
 				3AF681E027D7A40B00D482B7 /* ListadoEpisodiosContract.swift in Sources */,
 				3A0141EF27E9DCB700059431 /* FormularioContactoViewController.swift in Sources */,
 				3A5BB7C327E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift in Sources */,
+				3A05D97227F8E4CF00F6D936 /* MensajeProvider.swift in Sources */,
 				3A0141F127E9DCD800059431 /* FormularioContactoPresenter.swift in Sources */,
 				3AF681E227D7A99400D482B7 /* ListadoEpisodiosURLSessionProvider.swift in Sources */,
 				3AF681D727D7A39500D482B7 /* ListadoEpisodiosBuilder.swift in Sources */,

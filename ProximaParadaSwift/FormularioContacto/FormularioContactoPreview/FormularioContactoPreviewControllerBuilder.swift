@@ -11,8 +11,17 @@ import UIKit
 class FormularioContactoPreviewControllerBuilder {
     func build(viewModel: FormularioContactoViewModel) -> UIViewController {
         
-        let viewController = FormularioContactoPreviewViewController.create()
+        //no uso este viewModel
+        
+        let viewController = FormularioContactoPreviewViewController.createFromView() // create
         viewController.viewModel = viewModel
+        
+        let presenter = FormularioContactoPreviewPresenter()
+        let interactor = FormularioContactoPreviewInteractor()
+        
+        viewController.presenter = presenter
+        presenter.interactor = interactor
+        presenter.view = viewController
         
         return viewController
     }

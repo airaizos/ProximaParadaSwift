@@ -11,6 +11,7 @@ import UIKit
 protocol FormularioContactoViewContract: UIViewController {
     var presenter: FormularioContactoPresenterContract? { get set }
     
+    func viewDidLoad()
     
     var alert: UIAlertController { get set }
     func showValidationFormularioContacto()
