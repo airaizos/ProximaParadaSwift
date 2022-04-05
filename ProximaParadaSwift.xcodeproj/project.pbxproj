@@ -18,7 +18,6 @@
 		3A026BBC27FCA47D0047F468 /* AlertShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BBB27FCA47D0047F468 /* AlertShow.swift */; };
 		3A026BBE27FCB97B0047F468 /* MensajesCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A026BBD27FCB97B0047F468 /* MensajesCollectionViewController.storyboard */; };
 		3A026BC027FCB9860047F468 /* MensajesViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BBF27FCB9860047F468 /* MensajesViewControllerViewController.swift */; };
-		3A026BC227FCBA0A0047F468 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A026BC127FCBA0A0047F468 /* CollectionViewCell.xib */; };
 		3A026BC527FCBC0B0047F468 /* FormularioContactoPreviewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BC427FCBC0B0047F468 /* FormularioContactoPreviewWireframe.swift */; };
 		3A026BC727FCBD590047F468 /* MensajesCollectionControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BC627FCBD590047F468 /* MensajesCollectionControllerBuilder.swift */; };
 		3A026BC927FCC53E0047F468 /* MensajeCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BC827FCC53E0047F468 /* MensajeCollectionPresenter.swift */; };
@@ -88,7 +87,6 @@
 		3A026BBB27FCA47D0047F468 /* AlertShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertShow.swift; sourceTree = "<group>"; };
 		3A026BBD27FCB97B0047F468 /* MensajesCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MensajesCollectionViewController.storyboard; sourceTree = "<group>"; };
 		3A026BBF27FCB9860047F468 /* MensajesViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajesViewControllerViewController.swift; sourceTree = "<group>"; };
-		3A026BC127FCBA0A0047F468 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		3A026BC427FCBC0B0047F468 /* FormularioContactoPreviewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContactoPreviewWireframe.swift; sourceTree = "<group>"; };
 		3A026BC627FCBD590047F468 /* MensajesCollectionControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajesCollectionControllerBuilder.swift; sourceTree = "<group>"; };
 		3A026BC827FCC53E0047F468 /* MensajeCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajeCollectionPresenter.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 		3A026BC327FCBB500047F468 /* MensajesViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				3A026BC127FCBA0A0047F468 /* CollectionViewCell.xib */,
 				3A026BD827FCD18A0047F468 /* MensajeCollectionViewCell.swift */,
 			);
 			path = MensajesViewCell;
@@ -410,7 +407,6 @@
 			files = (
 				3A0141ED27E9DCA300059431 /* FormularioContactoViewController.storyboard in Resources */,
 				3AF681C927D7A32100D482B7 /* LaunchScreen.storyboard in Resources */,
-				3A026BC227FCBA0A0047F468 /* CollectionViewCell.xib in Resources */,
 				3AF681D327D7A36400D482B7 /* ListadoEpisodiosViewController.storyboard in Resources */,
 				3A04C58F27E2503400B3BEE7 /* Episodios.json in Resources */,
 				3AFC2FEB27DFAE6300FE1582 /* EpisodioDetalleViewController.storyboard in Resources */,
