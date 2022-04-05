@@ -64,9 +64,9 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
     @IBOutlet weak var sendButton: UIButton! {
         
         didSet {
-            sendButton.setTitle(NSLocalizedString("formulario_contacto_send_button", comment: ""), for: .normal)
-            sendButton.configuration?.image = UIImage(systemName: "arrow.forward.circle")!
+            sendButton.setTitle(NSLocalizedString("formulario_contacto_preview_button", comment: ""), for: .normal)
             
+            sendButton.configuration?.image = UIImage(systemName: "arrow.forward.circle")!
         }
     }
     
@@ -93,6 +93,7 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
         }
     }
     
+    /*
     func showValidationFormularioContacto() {
         DispatchQueue.main.async {
             self.alert = UIAlertController(title: "¡Enviado!", message: "Te contestaré en cuanto pueda", preferredStyle: .alert)
@@ -100,7 +101,7 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
             self.present(self.alert, animated: true)
         }
     }
-    
+    */
     func showErrorValidationFormularioContacto() {
         DispatchQueue.main.async {
             self.alert = UIAlertController(title: "Algún dato te ha faltado", message: "Inténtalo de nuevo", preferredStyle: .actionSheet)
@@ -117,12 +118,7 @@ class FormularioContactoViewController: UIViewController, FormularioContactoView
     
     @IBAction func sendActionButton(_ sender: Any) {
         presenter?.didPressSend()
-  //      textViewDidChange(mensajeTextView)
-        
     }
-    
- 
-
 }
 
 

@@ -26,9 +26,9 @@ final class FormularioContactoPresenter: FormularioContactoPresenterContract {
             
              interactor?.saveFormularioContacto(formularioContactoModel: formularioContactoModel)
             showPreview()
-           /*
-            view?.showValidationFormularioContacto()
-            */
+           
+          //esto mejor en el preview  view?.showValidationFormularioContacto()
+            
         } else {
             view?.showErrorValidationFormularioContacto()
         }

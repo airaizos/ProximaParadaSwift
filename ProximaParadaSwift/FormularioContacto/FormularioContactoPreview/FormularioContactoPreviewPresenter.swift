@@ -23,10 +23,12 @@ class  FormularioContactoPreviewPresenter: FormularioContactoPreviewPresenterCon
     
     var interactor: FormularioContactoPreviewInteractorContract?
     
-    var wireframe: FormularioContactoWireframeContract?
+    var wireframe: FormularioContactoPreviewWireframeContract?
     
     func didPressSend(_ viewModel: String) {
         interactor?.saveData(sendedData: viewModel, date: Date.now, id: UUID())
+        wireframe?.navigateTo()
+        
     }
 }
 

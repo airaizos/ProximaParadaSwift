@@ -18,10 +18,13 @@ class FormularioContactoPreviewControllerBuilder {
         
         let presenter = FormularioContactoPreviewPresenter()
         let interactor = FormularioContactoPreviewInteractor()
+        let wireframe = FormularioContactoPreviewWireframe()
         
         viewController.presenter = presenter
         presenter.interactor = interactor
         presenter.view = viewController
+        presenter.wireframe = wireframe
+        wireframe.view = viewController
         
         return viewController
     }

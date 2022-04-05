@@ -14,7 +14,7 @@ protocol FormularioContactoViewContract: UIViewController {
     func viewDidLoad()
     
     var alert: UIAlertController { get set }
-    func showValidationFormularioContacto()
+ //   func showValidationFormularioContacto()
     func showErrorValidationFormularioContacto()
 }
 

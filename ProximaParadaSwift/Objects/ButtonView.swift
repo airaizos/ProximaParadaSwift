@@ -7,7 +7,31 @@
 
 import UIKit
 
-class ButtonView: UIViewController {
+struct ButtonView {
+    let buttonTitle: String
+    let buttonSubtitle: String
+    let buttonImage: UIImage
+    
+    init(buttonTitle: String, buttonSubtitle: String, buttonImage: UIImage) {
+        self.buttonTitle = buttonTitle
+        self.buttonSubtitle = buttonSubtitle
+        self.buttonImage = buttonImage
+    }
+    
+    static let buttonStyle1: UIButton = {
+        var configuration = UIButton.Configuration.filled()
+        configuration.title = "title"
+        configuration.subtitle = "subtitle"
+        configuration.image = UIImage(systemName: "togglepower")!
+        
+        let button  = UIButton(type: .system)
+        
+        return button
+    }()
+}
+
+
+class ButtonVie: UIViewController {
     /*
     let buttonTitle: String
     let buttonSubtitle: String

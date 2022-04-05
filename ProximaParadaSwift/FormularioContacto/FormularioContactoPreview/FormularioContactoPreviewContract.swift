@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 protocol FormularioContactoPreviewViewControllerContract: AnyObject {
@@ -25,7 +26,7 @@ protocol FormularioContactoPreviewPresenterContract: AnyObject {
     
     var interactor: FormularioContactoPreviewInteractorContract? { get set }
     
-    var wireframe: FormularioContactoWireframeContract? { get set }
+    var wireframe: FormularioContactoPreviewWireframeContract? { get set }
     
     func didPressSend(_ viewModel: String)
 }
@@ -39,4 +40,11 @@ protocol FormularioContactoPreviewInteractorContract: AnyObject {
 
 protocol FormularioContactoPreviewInteractorOutputContract: AnyObject {
     
+}
+
+protocol FormularioContactoPreviewWireframeContract: AnyObject {
+    
+    var view: UIViewController? { get set }
+    
+    func navigateTo()
 }

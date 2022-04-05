@@ -8,8 +8,9 @@
 //MARK: Formulario
 
 "formulario_contacto_say_hello" = "Di hola 👋 ";
-"formulario_contacto_send_button" = "Enviar";
+"formulario_contacto_preview_button" = "";
 "formulario_contacto_name_placeholder" = "Escribe tu nombre";
 "formulario_contacto_email_placeholder" = "aqui tu correo";
 "formulario_contacto_your_message" = "y aqui tu mensaje";
 "formulario_contacto_mensajeTextView" = "Hola adrintro,  ";
+"formulario_contacto_send_button" = "Enviar";
