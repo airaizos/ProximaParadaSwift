@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+final class MensajesCollectionWireframe: MensajeCollectionWireframeContract {
+    var view: UIViewController?
+    
+    func navigate(to item: Message) {
+        
+    }
+}

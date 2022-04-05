@@ -11,17 +11,19 @@ import UIKit
 
 protocol MensajeCollectionViewControllerContract: AnyObject {
     var presenter: MensajeCollectionPresenterContract? { get set }
-    func viewDidLoad()
+    func reloadData()
     
 }
 
 protocol MensajeCollectionPresenterContract: AnyObject {
     var view: MensajeCollectionViewControllerContract? { get set }
-    var interactor: MensajeCollectionInteractorContract { get set }
-    var wireframe: MensajeCollectionWireframeContract { get set }
+    var interactor: MensajeCollectionInteractorContract? { get set }
+    var wireframe: MensajeCollectionWireframeContract? { get set }
     
     var numItems: Int { get }
- //   func cellViewModel(at indexPath: IndexPath) -> 
+   func cellViewModel(at indexPath: IndexPath) -> Message?
+    
+    
     
     func didSelectItem(at indexPath: IndexPath)
     
@@ -34,6 +36,7 @@ protocol MensajeCollectionInteractorContract: AnyObject {
 }
 
 protocol MensajeCollectionWireframeContract: AnyObject {
-    var view: UIViewController { get set }
+    var view: UIViewController? { get set }
     
+    func navigate(to item: Message)
 }

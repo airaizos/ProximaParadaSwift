@@ -25,6 +25,8 @@
 		3A026BCB27FCC54A0047F468 /* MensajeCollectionContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BCA27FCC54A0047F468 /* MensajeCollectionContract.swift */; };
 		3A026BCD27FCC55C0047F468 /* MensajeCollectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BCC27FCC55C0047F468 /* MensajeCollectionInteractor.swift */; };
 		3A026BCF27FCC5730047F468 /* MensajeCollectionWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BCE27FCC5730047F468 /* MensajeCollectionWireframe.swift */; };
+		3A026BD727FCCED10047F468 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BD627FCCED10047F468 /* Message.swift */; };
+		3A026BD927FCD18A0047F468 /* MensajeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BD827FCD18A0047F468 /* MensajeCollectionViewCell.swift */; };
 		3A048BA527EC8B0A009F8782 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BA427EC8B0A009F8782 /* UITextField.swift */; };
 		3A048BAD27EC8F7E009F8782 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A048BAF27EC8F7E009F8782 /* Localizable.strings */; };
 		3A048BB227EC90FC009F8782 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BB127EC90FC009F8782 /* UILabel.swift */; };
@@ -93,6 +95,8 @@
 		3A026BCA27FCC54A0047F468 /* MensajeCollectionContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajeCollectionContract.swift; sourceTree = "<group>"; };
 		3A026BCC27FCC55C0047F468 /* MensajeCollectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajeCollectionInteractor.swift; sourceTree = "<group>"; };
 		3A026BCE27FCC5730047F468 /* MensajeCollectionWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajeCollectionWireframe.swift; sourceTree = "<group>"; };
+		3A026BD627FCCED10047F468 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3A026BD827FCD18A0047F468 /* MensajeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A048BA427EC8B0A009F8782 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		3A048BA627EC8EE9009F8782 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		3A048BA727EC8EE9009F8782 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				3A026BC127FCBA0A0047F468 /* CollectionViewCell.xib */,
+				3A026BD827FCD18A0047F468 /* MensajeCollectionViewCell.swift */,
 			);
 			path = MensajesViewCell;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 			children = (
 				3AF681E427D7AB9C00D482B7 /* Episodio.swift */,
 				3A16282227EDD95200AE0210 /* FormularioContacto.swift */,
+				3A026BD627FCCED10047F468 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -436,11 +442,13 @@
 				3A0141F527E9DCEC00059431 /* FormularioContactoWireframe.swift in Sources */,
 				3A07188C27F5EF3A002A0E37 /* ButtonView.swift in Sources */,
 				3A5BB7BD27E0FD6D00B101CB /* InitialControllerBuilder.swift in Sources */,
+				3A026BD927FCD18A0047F468 /* MensajeCollectionViewCell.swift in Sources */,
 				3AF681E527D7AB9C00D482B7 /* Episodio.swift in Sources */,
 				3A105E2C27E7590700BD8745 /* EpisodioDetalleContract.swift in Sources */,
 				3A06B77227F1FB460015CA32 /* FormularioContactoPreviewControllerBuilder.swift in Sources */,
 				3A05D96C27F8E3C300F6D936 /* FormularioContactoPreviewContract.swift in Sources */,
 				3A5BB7BF27E11C8F00B101CB /* ListadoProviderError.swift in Sources */,
+				3A026BD727FCCED10047F468 /* Message.swift in Sources */,
 				3AFC2FED27DFAE8D00FE1582 /* EpisodioDetalleViewController.swift in Sources */,
 				3A026BBC27FCA47D0047F468 /* AlertShow.swift in Sources */,
 				3A105E2E27E7591B00BD8745 /* EpisodioDetalleBuilder.swift in Sources */,

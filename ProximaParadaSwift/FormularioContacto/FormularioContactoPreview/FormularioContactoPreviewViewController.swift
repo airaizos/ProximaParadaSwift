@@ -47,7 +47,8 @@ class FormularioContactoPreviewViewController: UIViewController,FormularioContac
     
     @IBAction func sendButtonAction(_ sender: UIButton) {
         
-        showValidationFormularioContacto()
+        
+       // showValidationFormularioContacto()
        //TODO: mostrar primero la alerta, después enviar a la collectionView
         presenter?.didPressSend( viewModel?.sendedData ?? "No data")
         //¿borrar viewModel.sendedData?
