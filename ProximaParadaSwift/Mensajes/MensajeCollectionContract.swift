@@ -21,7 +21,7 @@ protocol MensajeCollectionPresenterContract: AnyObject {
     var wireframe: MensajeCollectionWireframeContract? { get set }
     
     var numItems: Int { get }
-   func cellViewModel(at indexPath: IndexPath) -> Message?
+   func cellViewModel(at indexPath: IndexPath) -> EntityMessage?
     
     
     
@@ -38,5 +38,5 @@ protocol MensajeCollectionInteractorContract: AnyObject {
 protocol MensajeCollectionWireframeContract: AnyObject {
     var view: UIViewController? { get set }
     
-    func navigate(to item: Message)
+    func navigate(to item: EntityMessage)
 }

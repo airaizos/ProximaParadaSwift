@@ -13,9 +13,9 @@ class MensajeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var mensajeLabel: UILabel!
     
    
-    func configure(with viewModel: Message) {
+    func configure(with viewModel: EntityMessage) {
         
-        fechaLabel.text = "Fecha"
+        fechaLabel.text = "\(String(describing: viewModel.date))"
         mensajeLabel.text = viewModel.message
         
     }

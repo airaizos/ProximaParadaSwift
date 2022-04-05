@@ -18,13 +18,13 @@ final class MensajeCollectionPresenter: MensajeCollectionPresenterContract {
         mensajes.count
     }
     
-    private var mensajes = [Message]() {
+    private var mensajes = [EntityMessage]() {
         didSet {
             view?.reloadData()
         }
     }
     
-    func cellViewModel(at indexPath: IndexPath) -> Message? {
+    func cellViewModel(at indexPath: IndexPath) -> EntityMessage? {
         let item = mensajes[indexPath.row]
         return item.toMensajeCellViewModel
     }

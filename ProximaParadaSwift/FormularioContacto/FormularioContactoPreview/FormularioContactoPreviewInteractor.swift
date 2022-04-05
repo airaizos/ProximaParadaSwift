@@ -19,7 +19,7 @@ class FormularioContactoPreviewInteractor: FormularioContactoPreviewInteractorCo
     
     func saveData(sendedData: String, date: Date, id: UUID) {
         let context = contexto()
-        let entityMessage = NSEntityDescription.insertNewObject(forEntityName: "Message", into: context) as! Message
+        let entityMessage = NSEntityDescription.insertNewObject(forEntityName: "EntityMessage", into: context) as! EntityMessage
         entityMessage.message = sendedData
         entityMessage.date = Date.now
         entityMessage.id = UUID()

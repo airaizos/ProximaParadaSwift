@@ -8,7 +8,7 @@
 import Foundation
 
 
-extension Message {
+extension EntityMessage {
     /*
      ESTO YA LO TENGO EN EL MODELO
     let date: Date
@@ -16,7 +16,7 @@ extension Message {
     let message: String
     */
     
-    var toMensajeCellViewModel: Message? {
+    var toMensajeCellViewModel: EntityMessage? {
         
        //TODO: como paso los datos
        return nil

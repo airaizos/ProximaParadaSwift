@@ -26,6 +26,8 @@
 		3A026BCF27FCC5730047F468 /* MensajeCollectionWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BCE27FCC5730047F468 /* MensajeCollectionWireframe.swift */; };
 		3A026BD727FCCED10047F468 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BD627FCCED10047F468 /* Message.swift */; };
 		3A026BD927FCD18A0047F468 /* MensajeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BD827FCD18A0047F468 /* MensajeCollectionViewCell.swift */; };
+		3A026BDC27FCE5B40047F468 /* EntityMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BDA27FCE5B40047F468 /* EntityMessage+CoreDataClass.swift */; };
+		3A026BDD27FCE5B40047F468 /* EntityMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A026BDB27FCE5B40047F468 /* EntityMessage+CoreDataProperties.swift */; };
 		3A048BA527EC8B0A009F8782 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BA427EC8B0A009F8782 /* UITextField.swift */; };
 		3A048BAD27EC8F7E009F8782 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A048BAF27EC8F7E009F8782 /* Localizable.strings */; };
 		3A048BB227EC90FC009F8782 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A048BB127EC90FC009F8782 /* UILabel.swift */; };
@@ -95,6 +97,8 @@
 		3A026BCE27FCC5730047F468 /* MensajeCollectionWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajeCollectionWireframe.swift; sourceTree = "<group>"; };
 		3A026BD627FCCED10047F468 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3A026BD827FCD18A0047F468 /* MensajeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajeCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A026BDA27FCE5B40047F468 /* EntityMessage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityMessage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3A026BDB27FCE5B40047F468 /* EntityMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityMessage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3A048BA427EC8B0A009F8782 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		3A048BA627EC8EE9009F8782 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		3A048BA727EC8EE9009F8782 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -324,6 +328,8 @@
 		3AF681E327D7AB4200D482B7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3A026BDA27FCE5B40047F468 /* EntityMessage+CoreDataClass.swift */,
+				3A026BDB27FCE5B40047F468 /* EntityMessage+CoreDataProperties.swift */,
 				3AF681E427D7AB9C00D482B7 /* Episodio.swift */,
 				3A16282227EDD95200AE0210 /* FormularioContacto.swift */,
 				3A026BD627FCCED10047F468 /* Message.swift */,
@@ -464,8 +470,10 @@
 				3AFC2FF127DFB9C300FE1582 /* ListadoEpisodiosViewCell.swift in Sources */,
 				3A105E3427E780B500BD8745 /* EpisodioDetalleWireframe.swift in Sources */,
 				3A026BC727FCBD590047F468 /* MensajesCollectionControllerBuilder.swift in Sources */,
+				3A026BDC27FCE5B40047F468 /* EntityMessage+CoreDataClass.swift in Sources */,
 				3AF681C427D7A31E00D482B7 /* ProximaParadaSwift.xcdatamodeld in Sources */,
 				3A05D97027F8E3EA00F6D936 /* FormularioContactoPreviewInteractor.swift in Sources */,
+				3A026BDD27FCE5B40047F468 /* EntityMessage+CoreDataProperties.swift in Sources */,
 				3A026BC527FCBC0B0047F468 /* FormularioContactoPreviewWireframe.swift in Sources */,
 				3A0059C327F49A7900A57E78 /* UIColor.swift in Sources */,
 				3A048BA527EC8B0A009F8782 /* UITextField.swift in Sources */,
