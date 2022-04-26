@@ -9,9 +9,21 @@ import Foundation
 import UIKit
 
 
-final class FraseDelDiaBuilder  //:FraseDelDiaBuildeContract
-                                {
-  
-    
-    
+final class FraseDelDiaBuilder: FraseDelDiaBuilderContract
+{
+    func build() -> UIViewController {
+        let viewController = FraseDelDiaViewController.createFromStoryboard()
+        let presenter = FraseDelDiaPresenter()
+        let interactor = FraseDelDiaInteractor()
+        let wireframe = FraseDelDiaWireframe()
+        let fraseDelDiaProvider = FraseDelDiaProvider()
+     
+        viewController.presenter = presenter
+        presenter.interactor = interactor
+        interactor.fraseDelDiaProvider = fraseDelDiaProvider
+        presenter.view = viewController
+        presenter.wireframe = wireframe
+        return viewController
+        
+    }
 }

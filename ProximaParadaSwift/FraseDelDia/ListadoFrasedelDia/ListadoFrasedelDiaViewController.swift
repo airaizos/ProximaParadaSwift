@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ListadoFrasedelDiaViewController: UIViewController {
+class ListadoFraseDelDiaViewController: UIViewController {
 
+    var presenter: ListadoFraseDelDiaPresenterContract?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +28,16 @@ class ListadoFrasedelDiaViewController: UIViewController {
     }
     */
 
+}
+
+
+extension ListadoFraseDelDiaViewController: ListadoFraseDelDiaViewControllerContract {
+  
+    
+    static func createFromStoryBoard() -> ListadoFraseDelDiaViewController {
+        
+        return UIStoryboard(name: "ListadoFraseDelDiaViewController", bundle: .main).instantiateViewController(withIdentifier: "ListadoFraseDelDiaViewController") as! ListadoFraseDelDiaViewController
+    }
+    
+    
 }

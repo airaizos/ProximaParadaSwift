@@ -6,3 +6,23 @@
 //
 
 import Foundation
+import UIKit
+
+final class ListadoFraseDelDiaBuilder {
+    
+    func build() -> UIViewController {
+        let viewController = ListadoFraseDelDiaViewController.createFromStoryBoard()
+        let presenter = ListadoFraseDelDiaPresenter()
+        let interactor = ListadoFraseDelDiaInteractor()
+        let wireframe = ListadoFraseDelDiaWireframe()
+        let listadoFrasedelDiaProvider = ListadoFraseDelDiaProvider()
+        
+        viewController.presenter = presenter
+        presenter.view = viewController
+        presenter.interactor = interactor
+        presenter.wireframe = wireframe
+        interactor.ListadoFraseDelDiaProvider = listadoFrasedelDiaProvider
+        
+        return viewController
+    }
+}

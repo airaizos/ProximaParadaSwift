@@ -13,7 +13,7 @@ protocol FraseDelDiaViewControllerContract {
     
     var presenter: FraseDelDiaPresenterContract? { get set }
     func viewDidLoad()
-    func createFromStoryboard() -> FraseDelDiaViewController
+   static func createFromStoryboard() -> FraseDelDiaViewController
     
 }
 

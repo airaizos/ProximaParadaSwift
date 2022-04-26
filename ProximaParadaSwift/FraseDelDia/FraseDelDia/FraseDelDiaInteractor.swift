@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+
+class FraseDelDiaInteractor: FraseDelDiaInteractorContract {
+    var fraseDelDiaProvider: FraseDelDiaProviderContract?
+    
+    func saveCommentsDayPhrase(commentsModel: FraseDelDiaModel) {
+        
+    }
+    
+    
+}

@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import UIKit
+
+final class ListadoFraseDelDiaWireframe:ListadoFraseDelDiaWireframeContract {
+    var view: UIViewController?
+    
+    func navigateTo() {
+        
+    }
+    
+    
+}

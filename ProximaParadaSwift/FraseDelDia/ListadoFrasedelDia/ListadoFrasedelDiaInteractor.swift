@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+final class ListadoFraseDelDiaInteractor: ListadoFraseDelDiaInteractorContract {
+    var ListadoFraseDelDiaProvider: ListadoFraseDelDiaProviderContract?
+    
+    func saveListadoFraseDelDia(ListadoFraseDelDiaModel: FraseDelDiaModel) {
+        
+    }
+    
+    
+}

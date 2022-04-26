@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import UIKit
+
+final class FraseDelDiaWireframe: FraseDelDiaWireframeContract {
+    var view: UIViewController?
+    
+    func navigateTo() {
+        
+    }
+    
+    
+    
+}

@@ -7,12 +7,12 @@
 
 import UIKit
 
-class FraseDelDiaViewController: UIViewController//, FraseDelDiaViewControllerContract
+class FraseDelDiaViewController: UIViewController, FraseDelDiaViewControllerContract
 {
     var presenter: FraseDelDiaPresenterContract?
     
-  //  func createFromStoryboard() -> FraseDelDiaViewController {
-        
+  
+    
     
     
 
@@ -23,4 +23,11 @@ class FraseDelDiaViewController: UIViewController//, FraseDelDiaViewControllerCo
         
     }
     
+}
+
+
+extension FraseDelDiaViewController {
+   static func createFromStoryboard() -> FraseDelDiaViewController {
+        return UIStoryboard(name: "FraseDelDiaViewController", bundle: .main).instantiateViewController(withIdentifier: "FraseDelDiaViewController") as! FraseDelDiaViewController
+    }
 }

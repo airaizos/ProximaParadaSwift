@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+
+class ListadoFraseDelDiaPresenter: ListadoFraseDelDiaPresenterContract {
+    
+    
+    var view: ListadoFraseDelDiaViewController?
+    
+    var interactor: ListadoFraseDelDiaInteractor?
+    
+    var wireframe: ListadoFraseDelDiaWireframe?
+    
+    
+    func viewDidLoad() {
+        
+    }
+}

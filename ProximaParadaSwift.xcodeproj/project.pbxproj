@@ -70,6 +70,8 @@
 		3A5BB7C127E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BB7C027E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift */; };
 		3A5BB7C327E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BB7C227E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift */; };
 		3A63AD4827FF4A7800123A37 /* cv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63AD4727FF4A7800123A37 /* cv.swift */; };
+		3AB274C22817F7870048D33F /* FraseDelDiaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB274C12817F7870048D33F /* FraseDelDiaProvider.swift */; };
+		3AB274C4281802AA0048D33F /* ListadoFraseDelDiaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB274C3281802AA0048D33F /* ListadoFraseDelDiaProvider.swift */; };
 		3AF681BA27D7A31E00D482B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681B927D7A31E00D482B7 /* AppDelegate.swift */; };
 		3AF681BC27D7A31E00D482B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681BB27D7A31E00D482B7 /* SceneDelegate.swift */; };
 		3AF681BE27D7A31E00D482B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF681BD27D7A31E00D482B7 /* ViewController.swift */; };
@@ -160,6 +162,8 @@
 		3A5BB7C027E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosLocalProvider.swift; sourceTree = "<group>"; };
 		3A5BB7C227E145B200B101CB /* ListadoEpisodiosAlamoFireProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoEpisodiosAlamoFireProvider.swift; sourceTree = "<group>"; };
 		3A63AD4727FF4A7800123A37 /* cv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cv.swift; sourceTree = "<group>"; };
+		3AB274C12817F7870048D33F /* FraseDelDiaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FraseDelDiaProvider.swift; sourceTree = "<group>"; };
+		3AB274C3281802AA0048D33F /* ListadoFraseDelDiaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoFraseDelDiaProvider.swift; sourceTree = "<group>"; };
 		3AF681B627D7A31E00D482B7 /* ProximaParadaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximaParadaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF681B927D7A31E00D482B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF681BB27D7A31E00D482B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -395,6 +399,8 @@
 				3A16DA3427F0D9EC00D9EB36 /* FormularioContactoProvider.swift */,
 				3A05D97127F8E4CF00F6D936 /* MensajeProvider.swift */,
 				3A082D3D2811F8D6004A8066 /* MensajeProviderJson.swift */,
+				3AB274C12817F7870048D33F /* FraseDelDiaProvider.swift */,
+				3AB274C3281802AA0048D33F /* ListadoFraseDelDiaProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 				3A082D3E2811F8D6004A8066 /* MensajeProviderJson.swift in Sources */,
 				3A0141E927E9DC8400059431 /* FormularioContactoContract.swift in Sources */,
 				3A5BB7C127E1459A00B101CB /* ListadoEpisodiosLocalProvider.swift in Sources */,
+				3AB274C22817F7870048D33F /* FraseDelDiaProvider.swift in Sources */,
 				3A04C58A27E244C900B3BEE7 /* BundleDecodable.swift in Sources */,
 				3AFC2FF127DFB9C300FE1582 /* ListadoEpisodiosViewCell.swift in Sources */,
 				3A105E3427E780B500BD8745 /* EpisodioDetalleWireframe.swift in Sources */,
@@ -582,6 +589,7 @@
 				3A21E47A2816B5D5005B26A4 /* ListadoFrasedelDiaWireframe.swift in Sources */,
 				3A0141F127E9DCD800059431 /* FormularioContactoPresenter.swift in Sources */,
 				3AF681E227D7A99400D482B7 /* ListadoEpisodiosURLSessionProvider.swift in Sources */,
+				3AB274C4281802AA0048D33F /* ListadoFraseDelDiaProvider.swift in Sources */,
 				3A026BCB27FCC54A0047F468 /* MensajeCollectionContract.swift in Sources */,
 				3AF681D727D7A39500D482B7 /* ListadoEpisodiosBuilder.swift in Sources */,
 				3AF681BC27D7A31E00D482B7 /* SceneDelegate.swift in Sources */,

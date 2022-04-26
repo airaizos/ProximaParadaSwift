@@ -6,20 +6,38 @@
 //
 
 import Foundation
+import UIKit
 
 
-protocol ListadoFrasedelDiaViewControllerContract {
+protocol ListadoFraseDelDiaViewControllerContract {
+    
+    var presenter: ListadoFraseDelDiaPresenterContract? { get }
+    func viewDidLoad()
+    static func createFromStoryBoard() -> ListadoFraseDelDiaViewController
+}
+
+protocol ListadoFraseDelDiaPresenterContract {
+    var view: ListadoFraseDelDiaViewController? { get }
+    var interactor: ListadoFraseDelDiaInteractor? { get }
+    var wireframe: ListadoFraseDelDiaWireframe? { get }
+    func viewDidLoad()
+}
+
+protocol ListadoFraseDelDiaInteractorContract {
+    
+    var ListadoFraseDelDiaProvider: ListadoFraseDelDiaProviderContract? { get }
+    
+    func saveListadoFraseDelDia(ListadoFraseDelDiaModel: FraseDelDiaModel)
+}
+
+protocol ListadoFraseDelDiaWireframeContract {
+    var view: UIViewController? { get }
+    func navigateTo()
     
 }
 
-protocol ListadoFrasedelDiaPresenterContract {
-    
-}
-
-protocol ListadoFrasedelDiaInteractorContract {
-    
-}
-
-protocol ListadoFrasedelDiaWireframeContract {
+protocol ListadoFraseDelDiaProviderContract {
+ 
+    func fetchListadoFraseDelDia()
     
 }
