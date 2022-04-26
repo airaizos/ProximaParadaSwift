@@ -25,7 +25,7 @@ class ListadoEpisodiosViewCell: UITableViewCell {
     
     func configure(with viewModel: EpisodiosCellViewModel) {
         
-        cellTitle.text = viewModel.title
+        cellTitle.text = String(viewModel.title.utf16)
         cellSubtitle.text = viewModel.guid
     }
 

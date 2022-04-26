@@ -21,7 +21,7 @@ protocol MensajeCollectionPresenterContract: AnyObject {
     var wireframe: MensajeCollectionWireframeContract? { get set }
     
     var numItems: Int { get }
-   func cellViewModel(at indexPath: IndexPath) -> EntityMessage?
+//   func cellViewModel(at indexPath: IndexPath) -> EntityMessage
     
     
     
@@ -33,10 +33,25 @@ protocol MensajeCollectionPresenterContract: AnyObject {
 
 protocol MensajeCollectionInteractorContract: AnyObject {
     
+    var output: MensajeCollectionInteractorOutputContract? { get set }
+    var listadoMensajesProvider: MensajeCollectionProviderContract? { get set }
+    
+    func fetchMensajes()
+}
+
+
+protocol MensajeCollectionInteractorOutputContract: AnyObject {
+    func didFetch()
+    func didFetchFail()
 }
 
 protocol MensajeCollectionWireframeContract: AnyObject {
     var view: UIViewController? { get set }
     
     func navigate(to item: EntityMessage)
+}
+
+protocol MensajeCollectionProviderContract: AnyObject {
+    
+    func fetchFrom()
 }

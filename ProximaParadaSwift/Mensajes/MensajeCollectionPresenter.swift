@@ -23,12 +23,12 @@ final class MensajeCollectionPresenter: MensajeCollectionPresenterContract {
             view?.reloadData()
         }
     }
-    
-    func cellViewModel(at indexPath: IndexPath) -> EntityMessage? {
+    /*
+    func cellViewModel(at indexPath: IndexPath) -> EntityMessage {
         let item = mensajes[indexPath.row]
         return item.toMensajeCellViewModel
     }
-    
+    */
     func didSelectItem(at indexPath: IndexPath) {
         let item = mensajes[indexPath.row]
         wireframe?.navigate(to: item)
@@ -41,6 +41,6 @@ final class MensajeCollectionPresenter: MensajeCollectionPresenterContract {
     
     
     private func fetchData() {
-        //obtener datos de CoreData
+        //pedir datos a interactor: obtener datos de CoreData
     }
 }

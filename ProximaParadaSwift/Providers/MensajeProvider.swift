@@ -31,5 +31,37 @@ class MensajeProvider {
         }
     }
     
+    func fetchData() {
+        let context = contexto()
+        let fetchRequest: NSFetchRequest<Message> = Message.fetchRequest()
+        let order = NSSortDescriptor(key: "date", ascending: true)
+        fetchRequest.sortDescriptors = [order]
+   
+        
+      
+        
+    }
     
+    
+    //MARK: COMO llevo el resultado a Interactor?
+    /*
+    func getData(_ completion: @escaping (Result<[Message], ProviderError>) -> Void) {
+        let context = contexto()
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Message")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                let message = data.value(forKey: "message")
+                let date  = data.value(forKey: "date")
+                let id = data.value(forKey: "id")
+                
+              
+            }
+        } catch {
+            let error = completion(.failure(.generic(error)))
+        }
+    }
+    
+    */
 }

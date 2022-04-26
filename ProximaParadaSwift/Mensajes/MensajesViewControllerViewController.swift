@@ -9,8 +9,6 @@ import UIKit
 
 class MensajesCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, MensajeCollectionViewControllerContract {
   
-    
-    
     var presenter: MensajeCollectionPresenterContract?
     
     @IBOutlet weak var mensajesTitulo: UILabel!
@@ -31,10 +29,11 @@ class MensajesCollectionViewController: UIViewController, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let viewModel = presenter?.cellViewModel(at: indexPath), let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? MensajeCollectionViewCell else {
+     //   guard let viewModel = presenter?.cellViewModel(at: indexPath),
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? MensajeCollectionViewCell else {
             fatalError()
         }
-        cell.configure(with: viewModel)
+     //   cell.configure(with: viewModel)
         return cell
     }
 
