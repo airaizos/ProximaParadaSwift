@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,18 +15,110 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gU2-JS-6hd">
+                                <rect key="frame" x="0.0" y="78" width="414" height="735"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Al que madruga Dios le ayuda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0k-PI-0cU">
+                                        <rect key="frame" x="20" y="10" width="374" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="textPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngg-Pw-MOi">
+                                        <rect key="frame" x="10" y="100" width="394" height="239"/>
+                                        <color key="backgroundColor" name="backgroundSecondary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="239" id="Zap-Xf-Mp2"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Esta frase me transmite...">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45746928450000002" green="0.33203560110000002" blue="0.53068488840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
+                                    </textView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="hjw-Sp-zjR">
+                                        <rect key="frame" x="105" y="50" width="204" height="31"/>
+                                        <color key="minimumTrackTintColor" name="textTertiary"/>
+                                        <color key="maximumTrackTintColor" name="backgroundPrimary"/>
+                                        <color key="thumbTintColor" name="textSecondary"/>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vat-KY-lx9">
+                                        <rect key="frame" x="37" y="359" width="89" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Otra frase">
+                                            <color key="baseForegroundColor" name="textPrimary"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1x-9L-Lo0">
+                                        <rect key="frame" x="300" y="359" width="94" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Comments">
+                                            <color key="baseForegroundColor" name="textPrimary"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundPrimary"/>
+                                <constraints>
+                                    <constraint firstItem="Vat-KY-lx9" firstAttribute="leading" secondItem="jrp-ce-mA9" secondAttribute="leading" constant="37" id="0tb-G1-JyW"/>
+                                    <constraint firstItem="hjw-Sp-zjR" firstAttribute="top" secondItem="gU2-JS-6hd" secondAttribute="top" constant="50" id="23a-fS-EZB"/>
+                                    <constraint firstItem="ngg-Pw-MOi" firstAttribute="top" secondItem="hjw-Sp-zjR" secondAttribute="bottom" constant="20" id="2pf-T1-PlN"/>
+                                    <constraint firstItem="z0k-PI-0cU" firstAttribute="top" secondItem="jrp-ce-mA9" secondAttribute="top" constant="10" id="4dC-ep-db4"/>
+                                    <constraint firstItem="jrp-ce-mA9" firstAttribute="trailing" secondItem="ngg-Pw-MOi" secondAttribute="trailing" constant="10" id="4dW-pa-wzB"/>
+                                    <constraint firstItem="jrp-ce-mA9" firstAttribute="trailing" secondItem="z0k-PI-0cU" secondAttribute="trailing" constant="20" id="DzV-7f-OeO"/>
+                                    <constraint firstAttribute="bottom" secondItem="ngg-Pw-MOi" secondAttribute="bottom" constant="365" id="Ez9-wY-8X5"/>
+                                    <constraint firstItem="Vat-KY-lx9" firstAttribute="top" secondItem="ngg-Pw-MOi" secondAttribute="bottom" constant="20" id="Tne-Tp-RbX"/>
+                                    <constraint firstItem="Vat-KY-lx9" firstAttribute="top" secondItem="ngg-Pw-MOi" secondAttribute="bottom" constant="20" id="YZa-Eg-aIH"/>
+                                    <constraint firstItem="hjw-Sp-zjR" firstAttribute="leading" secondItem="jrp-ce-mA9" secondAttribute="leading" constant="107" id="Z7X-dT-dgX"/>
+                                    <constraint firstItem="jrp-ce-mA9" firstAttribute="trailing" secondItem="hjw-Sp-zjR" secondAttribute="trailing" constant="107" id="ZyP-d6-BUp"/>
+                                    <constraint firstItem="ngg-Pw-MOi" firstAttribute="leading" secondItem="jrp-ce-mA9" secondAttribute="leading" constant="10" id="evJ-Q0-J3E"/>
+                                    <constraint firstItem="hjw-Sp-zjR" firstAttribute="top" secondItem="z0k-PI-0cU" secondAttribute="bottom" constant="20" id="o1W-fN-Rr4"/>
+                                    <constraint firstItem="z0k-PI-0cU" firstAttribute="leading" secondItem="jrp-ce-mA9" secondAttribute="leading" constant="20" id="rEn-fq-KHb"/>
+                                    <constraint firstItem="b1x-9L-Lo0" firstAttribute="top" secondItem="ngg-Pw-MOi" secondAttribute="bottom" constant="20" id="t0C-JJ-GtD"/>
+                                    <constraint firstItem="jrp-ce-mA9" firstAttribute="trailing" secondItem="b1x-9L-Lo0" secondAttribute="trailing" constant="20" id="yLF-8e-LIV"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Uja-sD-ctj"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="jrp-ce-mA9"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundPrimary"/>
+                        <constraints>
+                            <constraint firstItem="gU2-JS-6hd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="34" id="4Gp-cx-g1W"/>
+                            <constraint firstItem="gU2-JS-6hd" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="UHi-dd-wMU"/>
+                            <constraint firstItem="gU2-JS-6hd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Xhh-yj-k1h"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gU2-JS-6hd" secondAttribute="trailing" id="fw2-pC-lwh"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="110"/>
+            <point key="canvasLocation" x="31.884057971014496" y="109.82142857142857"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="backgroundPrimary">
+            <color red="0.98799997568130493" green="0.96899998188018799" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundSecondary">
+            <color red="0.97600001096725464" green="0.94099998474121094" blue="0.81199997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textPrimary">
+            <color red="0.3059999942779541" green="0.13699999451637268" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textSecondary">
+            <color red="0.50599998235702515" green="0.12200000137090683" blue="0.45500001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textTertiary">
+            <color red="0.93300002813339233" green="0.78799998760223389" blue="0.85900002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
